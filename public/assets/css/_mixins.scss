@@ -1,0 +1,22 @@
+@mixin btnStyles {
+    border: 1px solid $primaryColor;
+    color: $white;
+    background-color: $primaryColor;
+    &:hover {
+        border-color: $primaryColor;
+        color: $primaryColor;
+        background-color: transparent;
+    }
+}
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
