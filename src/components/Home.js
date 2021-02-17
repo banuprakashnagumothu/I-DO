@@ -75,18 +75,17 @@ import React ,{ useState }from 'react';
                             </div>
                         </div>
                         <div className="row text-center">
-                         {menu?menu.map((m)=>{
-                             return (<div className="col-lg-4">
+                       <div className="col-lg-4">
                                 <div className="service-box">
                                     <div className="service-icon">
                                         <img src={process.env.PUBLIC_URL +"/assets/img/service1.png"} className="img-fluid" />
                                     </div>
-                                    <h2>{m.body}</h2>
+                                    <h2>Donate</h2>
                                     <p>{m.desccription} </p>
-                                    <a href="#">Learn More</a>
+                                    <a href="#">Duis</a>
                                 </div>
-                            </div>)
-                         }):''}
+                            </div>
+                        
                             
                             <div className="col-lg-4">
                                 <div className="service-box">
