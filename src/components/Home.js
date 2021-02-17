@@ -31,7 +31,7 @@ import React ,{ useState }from 'react';
                             <div className="col-12 col-lg-4">
                                 <div className="features">
                                     <div className="features-icon">
-                                        <img src="/assets/img/featured1.png" className="img-fluid" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/featured1.png"} className="img-fluid" />
                                     </div>
                                     <h2>Our World</h2>
                                     <h3>We are in 32 Countries</h3>
@@ -40,7 +40,7 @@ import React ,{ useState }from 'react';
                             <div className="col-12 col-lg-4">
                                 <div className="features">
                                     <div className="features-icon">
-                                        <img src="/assets/img/featured2.png" className="img-fluid" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/featured2.png"} className="img-fluid" />
                                     </div>
                                     <h2>Our Promise</h2>
                                     <h3>59% Of all $ goes to Programs</h3>
@@ -49,7 +49,7 @@ import React ,{ useState }from 'react';
                             <div className="col-12 col-lg-4">
                                 <div className="features">
                                     <div className="features-icon">
-                                        <img src="/assets/img/featured3.png" className="img-fluid" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/featured3.png" } className="img-fluid" />
                                     </div>
                                     <h2>Our Reach</h2>
                                     <h3>We are in 32 Countries</h3>
@@ -79,7 +79,7 @@ import React ,{ useState }from 'react';
                              return (<div className="col-lg-4">
                                 <div className="service-box">
                                     <div className="service-icon">
-                                        <img src="/assets/img/service1.png" className="img-fluid" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/service1.png"} className="img-fluid" />
                                     </div>
                                     <h2>{m.body}</h2>
                                     <p>{m.desccription} </p>
@@ -91,7 +91,7 @@ import React ,{ useState }from 'react';
                             <div className="col-lg-4">
                                 <div className="service-box">
                                     <div className="service-icon">
-                                        <img src="/assets/img/service2.png" className="img-fluid" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/service2.png"} className="img-fluid" />
                                     </div>
                                     <h2>Donate</h2>
                                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
@@ -101,7 +101,7 @@ import React ,{ useState }from 'react';
                             <div className="col-lg-4">
                                 <div className="service-box">
                                     <div className="service-icon">
-                                        <img src="/assets/img/service3.png" className="img-fluid" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/service3.png"} className="img-fluid" />
                                     </div>
                                     <h2>Fundraise</h2>
                                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
@@ -126,7 +126,7 @@ import React ,{ useState }from 'react';
                         <div className="col-md-6 col-lg-4">
                             <div className="causes">
                                 <div className="causes-img">
-                                    <img src="/assets/img/causes1.jpg" className="img-fluid" />
+                                    <img src={process.env.PUBLIC_URL +"/assets/img/causes1.jpg"} className="img-fluid" />
                                     <div className="overlay">
                                         <div class="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
@@ -149,7 +149,7 @@ import React ,{ useState }from 'react';
                         <div className="col-md-6 col-lg-4">
                             <div className="causes">
                                 <div className="causes-img">
-                                    <img src="/assets/img/causes2.jpg" className="img-fluid" />
+                                    <img src={process.env.PUBLIC_URL +"/assets/img/causes2.jpg"} className="img-fluid" />
                                     <div className="overlay">
                                         <div class="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
@@ -172,7 +172,7 @@ import React ,{ useState }from 'react';
                         <div className="col-md-6 col-lg-4">
                             <div className="causes">
                                 <div className="causes-img">
-                                    <img src="/assets/img/causes3.jpg" className="img-fluid" />
+                                    <img src={process.env.PUBLIC_URL +"/assets/img/causes3.jpg"} className="img-fluid" />
                                     <div className="overlay">
                                         <div class="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
@@ -195,7 +195,7 @@ import React ,{ useState }from 'react';
                         <div className="col-md-6 col-lg-4">
                             <div className="causes">
                                 <div className="causes-img">
-                                    <img src="/assets/img/causes4.jpg" className="img-fluid" />
+                                    <img src={process.env.PUBLIC_URL +"/assets/img/causes4.jpg"} className="img-fluid" />
                                     <div className="overlay">
                                         <div class="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
@@ -218,7 +218,7 @@ import React ,{ useState }from 'react';
                         <div className="col-md-6 col-lg-4">
                             <div className="causes">
                                 <div className="causes-img">
-                                    <img src="/assets/img/causes5.jpg" className="img-fluid" />
+                                    <img src={process.env.PUBLIC_URL +"/assets/img/causes5.jpg"} className="img-fluid" />
                                     <div className="overlay">
                                         <div class="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
@@ -241,7 +241,7 @@ import React ,{ useState }from 'react';
                         <div className="col-md-6 col-lg-4">
                             <div className="causes">
                                 <div className="causes-img">
-                                    <img src="/assets/img/causes6.jpg" className="img-fluid" />
+                                    <img src={process.env.PUBLIC_URL +"/assets/img/causes6.jpg"} className="img-fluid" />
                                     <div className="overlay">
                                         <div class="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
@@ -276,7 +276,7 @@ import React ,{ useState }from 'react';
                     </div>
                     <div className="row">
                         <div className="col-md-6 col-lg-7">
-                            <img src="/assets/img/about.jpg" className="img-fluid" />
+                            <img src={process.env.PUBLIC_URL +"/assets/img/about.jpg"} className="img-fluid" />
                         </div>
                         <div className="col-md-6 col-lg-5">
                             <div class="about">
@@ -334,7 +334,7 @@ import React ,{ useState }from 'react';
                             <div className="team-wrapper">
                                 <div className="team-item">
                                     <div className="team-img">
-                                        <img src="/assets/img/team1.jpg" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team1.jpg"} />
                                         <div class="team-social">
                                             <ul class="global-list">
                                             <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
@@ -351,7 +351,7 @@ import React ,{ useState }from 'react';
                             <div className="team-wrapper">
                                 <div className="team-item">
                                     <div className="team-img">
-                                        <img src="/assets/img/team2.jpg" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team2.jpg"} />
                                         <div class="team-social">
                                             <ul class="global-list">
                                             <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
@@ -368,7 +368,7 @@ import React ,{ useState }from 'react';
                             <div className="team-wrapper">
                                 <div className="team-item">
                                     <div className="team-img">
-                                        <img src="/assets/img/team3.jpg" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team3.jpg"} />
                                         <div class="team-social">
                                             <ul class="global-list">
                                             <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
@@ -385,7 +385,7 @@ import React ,{ useState }from 'react';
                             <div className="team-wrapper">
                                 <div className="team-item">
                                     <div className="team-img">
-                                        <img src="/assets/img/team4.jpg" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team4.jpg"} />
                                         <div class="team-social">
                                             <ul class="global-list">
                                             <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
@@ -402,7 +402,7 @@ import React ,{ useState }from 'react';
                             <div className="team-wrapper">
                                 <div className="team-item">
                                     <div className="team-img">
-                                        <img src="/assets/img/team2.jpg" />
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team2.jpg"} />
                                         <div class="team-social">
                                             <ul class="global-list">
                                             <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
