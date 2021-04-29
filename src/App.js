@@ -12,11 +12,11 @@ function App() {
   return (
      <Router >
              <Header />
-     <Route path='/' exact>
+     <Route path={process.env.PUBLIC_URL+'/'} exact>
        <Home/>
      </Route>
 
-     <Route path='/donate' exact>
+     <Route path={process.env.PUBLIC_URL+'/donate'} exact>
        <Donate />
      </Route>
    
