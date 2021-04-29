@@ -33,7 +33,7 @@ function Header(){
                                 <a className="nav-link" href="#">Page</a>
                             </li>
                             <li className="nav-item">
-                             <a href='/donate'>   <button className="btn header__btndonate">
+                             <a href={process.env.PUBLIC_URL+'/donate'}>   <button className="btn header__btndonate">
                                     Donate Now
                                 </button>
                                 </a>

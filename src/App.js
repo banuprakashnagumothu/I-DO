@@ -10,13 +10,13 @@ import {
 } from "react-router-dom";
 function App() {
   return (
-     <Router >
+     <Router basename={process.env.PUBLIC_URL}>
              <Header />
-     <Route path={process.env.PUBLIC_URL+'/'} exact>
+     <Route path='/' exact>
        <Home/>
      </Route>
 
-     <Route path={process.env.PUBLIC_URL+'/donate'} exact>
+     <Route path='/donate' exact>
        <Donate />
      </Route>
    
