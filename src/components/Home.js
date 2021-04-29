@@ -2,11 +2,11 @@ import React ,{ useState }from 'react';
 
  function Home() {
      const [menu,setMenu]=useState([{'menuItem':"sdsdsd"},{'menuItem':"2  item"}]);
-     async function getData(){
-         const data = await fetch('https://jsonplaceholder.typicode.com/posts');
-         setMenu(await data.json());
-         };
-         getData();
+    //  async function getData(){
+    //      const data = await fetch('https://jsonplaceholder.typicode.com/posts');
+    //      setMenu(await data.json());
+    //      };
+    //      getData();
     return(
         <React.Fragment>
             <section className="banner" id="banner">
@@ -81,7 +81,6 @@ import React ,{ useState }from 'react';
                                         <img src={process.env.PUBLIC_URL +"/assets/img/service1.png"} className="img-fluid" />
                                     </div>
                                     <h2>Donate</h2>
-                                    <p>{m.desccription} </p>
                                     <a href="#">Duis</a>
                                 </div>
                             </div>
