@@ -6,6 +6,9 @@
 body {
     color: #464646;
     background-color: #f7f7f7;
+      overflow-y: scroll;
+  
+  
 }
 
 a {
@@ -91,7 +94,7 @@ header {
     position: relative;
     z-index: 1;
     background: #999 url('../img/banner-bg.jpg') no-repeat center / cover;
-
+    height: 380px;
     &::before {
         position: absolute;
         content: '';
@@ -104,7 +107,8 @@ header {
     }
     &-text {
         color: $white;
-        padding: 260px 0 140px;
+        padding: 20% 0 0;
+        // padding: 260px 0 140px;
         
         h1 {
             font-size: 3rem;
@@ -130,11 +134,11 @@ header {
 }
 
 .section {
-    padding: 100px 0 80px;
+    padding: 50px 0 40px;
 
     &-header {
         font-size: 16px;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
 
         & h1{
             font-size: 32px;
@@ -159,7 +163,7 @@ header {
 }
 
 .features__row {
-    padding-bottom: 100px;
+    padding-top: 48px;
 }
 
 .features {
@@ -169,8 +173,8 @@ header {
 
     &-icon {
         display: inline-block;
-        width: 60px;
-        margin-bottom: 30px;
+        width: 42px;
+        margin-bottom: 10px;
     }
 
     h2 {
@@ -190,17 +194,17 @@ header {
 .section-desc {
     position: relative;
 
-    &:before {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        content: "\f105";
-        font-family: fontawesome;
-        font-size: 60px;
-        color: $primaryColor;
-        background-color: transparent;
-    }
+    // &:before {
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     left: 0;
+    //     content: "\f105";
+    //     font-family: fontawesome;
+    //     font-size: 60px;
+    //     color: $primaryColor;
+    //     background-color: transparent;
+    // }
 }
     
 .service-box{
@@ -257,7 +261,54 @@ header {
         }
     }
 }
+.services-inner{
+  background: yellow;
+  padding: 30% 0px;
+  color: white;
+  img{
+    width: 120px;
+  }
+}
 
+.primary-health-care{
+  
+  background:#689f39 url("../img/image-24.jpg") no-repeat center / cover;
+  // background-position: center !important;
+  // background-repeat: no-repeat !important;
+  // background-size: cover !important;
+
+}
+.nutrition{
+  background:  #0090ff url("../img/image-26.jpg") no-repeat center / cover;  
+  
+
+}
+.education{
+  background:#ffb200 url("../img/image-27.jpg") no-repeat center / cover  ;
+
+}
+.wash {
+  background:  #0090ff url("../img/image-26.jpg") no-repeat center / cover;  
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+}
+.sustainable-health{
+  background: #e64a19 url("../img/image-25.jpeg") no-repeat center / cover  ;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+}
+.service-count-name{
+  font-size: 20px;
+}
+.service-count-wrapper{
+  font-size: 48px;
+  padding: 20px 0px;
+  font-weight: bold;
+}
 .causes {
     margin-bottom: 50px;
     overflow: hidden;

@@ -1,5 +1,5 @@
 import React ,{ useState }from 'react';
-
+import  Ticker from '../ticker';
  function Home() {
      const [menu,setMenu]=useState([{'menuItem':"sdsdsd"},{'menuItem':"2  item"}]);
     //  async function getData(){
@@ -15,9 +15,9 @@ import React ,{ useState }from 'react';
                         <div className="row">
                             <div className="col-12 col-lg-7">
                                 <div className="banner-text">
-                                    <h1>
+                                    <h3>
                                         Your contribution <span>can help achieve a solution</span>
-                                    </h1>
+                                    </h3>
                                     <p>
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since
                                     </p>
@@ -27,7 +27,7 @@ import React ,{ useState }from 'react';
                                 </div>
                             </div>
                         </div>
-                        <div className="row features__row">
+                        {/* <div className="row features__row">
                             <div className="col-12 col-lg-4">
                                 <div className="features">
                                     <div className="features-icon">
@@ -55,17 +55,18 @@ import React ,{ useState }from 'react';
                                     <h3>We are in 32 Countries</h3>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>
+
             <section className="section" id="services">
                 <div className="container-fluid">
                     <div className="container">
                         <div className="section-header">
                             <div className="row align-items-center">
                                 <div className="col-lg-4">
-                                    <h1>Charityo NonProfit Organization</h1>
+                                    <h1>Indigenous development organisation</h1>
                                 </div>
                                 <div className="col-lg-8">
                                     <div className="section-desc sub-title ps-5">
@@ -74,7 +75,7 @@ import React ,{ useState }from 'react';
                                 </div>
                             </div>
                         </div>
-                        <div className="row text-center">
+                        {/* <div className="row text-center">
                        <div className="col-lg-4">
                                 <div className="service-box">
                                     <div className="service-icon">
@@ -106,11 +107,86 @@ import React ,{ useState }from 'react';
                                     <a href="#">Learn More</a>
                                 </div>
                             </div>
+                        </div> */}
+                        <div className='row text-center'>
+                            <div className="col-md-4 col-lg-4 col-12 mt-3">
+                             <div className="services-inner primary-health-care">
+                                <div className="mb-2"><img src='/assets/img/primary-health-care-ico.png'/></div>
+                                <h4>Primary Health Care</h4>
+                            </div>
+                            </div>
+                            <div className="col-md-4 col-lg-4 col-12 mt-3">
+                             <div className="services-inner nutrition">
+                                <div className="mb-2"><img src='/assets/img/nutrition-ico.png'/></div>
+                                <h4>Nutrition</h4>
+                            </div>
+                            </div>
+                            <div className="col-md-4 col-lg-4 col-12 mt-3">
+                             <div className="services-inner education">
+                                <div className="mb-2"><img src='/assets/img/education-ico.png'/></div>
+                                <h4>Education</h4>
+                            </div>
+                            </div>
+                            <div className="col-md-4 col-lg-4 col-12 mt-3">
+                             <div className="services-inner wash">
+                                <div className="mb-2"><img src='/assets/img/wash.png'/></div>
+                                <h4>Wash</h4>
+                            </div>
+                            </div>
+                            
+                            <div className="col-md-4 col-lg-4 col-12 mt-3">
+                             <div className="services-inner sustainable-health">
+                                <div className="mb-2"><img src='/assets/img/sustainable-health-ico.png'/></div>
+                                <h4>Sustainable Health</h4>
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="section bg-white" id="causes">
+            <section className="section bg-white services-count-list">
+                <div className="container">
+                    <div className="row text-center">
+                        <div className="col-4 d-flex flex-column service-count-wrapper"> 
+                         <Ticker className="service-count" end={31}  />
+<div className="service-count-name">Habitations</div>
+                         </div>
+                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <Ticker className="service-count" end={50}  />
+<div className="service-count-name">Community health workers trained</div>
+                         </div>
+                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <Ticker className="service-count" end={4300}  />
+<div className="service-count-name">Population covered </div>
+                         </div>
+                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <Ticker className="service-count" end={14}  />
+<div className="service-count-name">
+Bridge schools 
+ </div>
+                         </div>
+                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <Ticker className="service-count" end={432}  />
+<div className="service-count-name">
+Students </div>
+                         </div>
+                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <Ticker className="service-count" end={432}  />
+<div className="service-count-name">
+Mid-day meals provided 
+ </div>
+                         </div>
+                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <Ticker className="service-count" end={1000}  />
+<div className="service-count-name">
+Nutrition powder provided 
+ </div>
+                         </div>
+
+                    </div>
+                </div>
+            </section>
+            {/* <section className="section bg-white" id="causes">
                 <div className="container">
                     <div className="section-header col-lg-7">
                         <h1>
@@ -126,16 +202,16 @@ import React ,{ useState }from 'react';
                                 <div className="causes-img">
                                     <img src={process.env.PUBLIC_URL +"/assets/img/causes1.jpg"} className="img-fluid" />
                                     <div className="overlay">
-                                        <div class="paragraph">
+                                        <div className="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
                                         </div>
-                                        <div class="donation">
-                                            <ul class="global-list">
+                                        <div className="donation">
+                                            <ul className="global-list">
                                                 <li>Raised: $6,300</li>
                                                 <li>Total Goal : $75000</li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary">Donate Now</a>
+                                        <a href="#" className="btn btn-primary">Donate Now</a>
                                     </div>
                                 </div>
                                 <h2>
@@ -149,16 +225,16 @@ import React ,{ useState }from 'react';
                                 <div className="causes-img">
                                     <img src={process.env.PUBLIC_URL +"/assets/img/causes2.jpg"} className="img-fluid" />
                                     <div className="overlay">
-                                        <div class="paragraph">
+                                        <div className="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
                                         </div>
-                                        <div class="donation">
-                                            <ul class="global-list">
+                                        <div className="donation">
+                                            <ul className="global-list">
                                                 <li>Raised: $6,300</li>
                                                 <li>Total Goal : $75000</li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary">Donate Now</a>
+                                        <a href="#" className="btn btn-primary">Donate Now</a>
                                     </div>
                                 </div>
                                 <h2>
@@ -172,16 +248,16 @@ import React ,{ useState }from 'react';
                                 <div className="causes-img">
                                     <img src={process.env.PUBLIC_URL +"/assets/img/causes3.jpg"} className="img-fluid" />
                                     <div className="overlay">
-                                        <div class="paragraph">
+                                        <div className="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
                                         </div>
-                                        <div class="donation">
-                                            <ul class="global-list">
+                                        <div className="donation">
+                                            <ul className="global-list">
                                                 <li>Raised: $6,300</li>
                                                 <li>Total Goal : $75000</li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary">Donate Now</a>
+                                        <a href="#" className="btn btn-primary">Donate Now</a>
                                     </div>
                                 </div>
                                 <h2>
@@ -195,16 +271,16 @@ import React ,{ useState }from 'react';
                                 <div className="causes-img">
                                     <img src={process.env.PUBLIC_URL +"/assets/img/causes4.jpg"} className="img-fluid" />
                                     <div className="overlay">
-                                        <div class="paragraph">
+                                        <div className="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
                                         </div>
-                                        <div class="donation">
-                                            <ul class="global-list">
+                                        <div className="donation">
+                                            <ul className="global-list">
                                                 <li>Raised: $6,300</li>
                                                 <li>Total Goal : $75000</li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary">Donate Now</a>
+                                        <a href="#" className="btn btn-primary">Donate Now</a>
                                     </div>
                                 </div>
                                 <h2>
@@ -218,16 +294,16 @@ import React ,{ useState }from 'react';
                                 <div className="causes-img">
                                     <img src={process.env.PUBLIC_URL +"/assets/img/causes5.jpg"} className="img-fluid" />
                                     <div className="overlay">
-                                        <div class="paragraph">
+                                        <div className="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
                                         </div>
-                                        <div class="donation">
-                                            <ul class="global-list">
+                                        <div className="donation">
+                                            <ul className="global-list">
                                                 <li>Raised: $6,300</li>
                                                 <li>Total Goal : $75000</li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary">Donate Now</a>
+                                        <a href="#" className="btn btn-primary">Donate Now</a>
                                     </div>
                                 </div>
                                 <h2>
@@ -241,16 +317,16 @@ import React ,{ useState }from 'react';
                                 <div className="causes-img">
                                     <img src={process.env.PUBLIC_URL +"/assets/img/causes6.jpg"} className="img-fluid" />
                                     <div className="overlay">
-                                        <div class="paragraph">
+                                        <div className="paragraph">
                                             <p>We make a difference in the lives of people during a very traumatic time in their life.</p>
                                         </div>
-                                        <div class="donation">
-                                            <ul class="global-list">
+                                        <div className="donation">
+                                            <ul className="global-list">
                                                 <li>Raised: $6,300</li>
                                                 <li>Total Goal : $75000</li>
                                             </ul>
                                         </div>
-                                        <a href="#" class="btn btn-primary">Donate Now</a>
+                                        <a href="#" className="btn btn-primary">Donate Now</a>
                                     </div>
                                 </div>
                                 <h2>
@@ -261,8 +337,8 @@ import React ,{ useState }from 'react';
                         </div>
                     </div>
                 </div>
-            </section>
-            <section className="section bg-white" id="about">
+            </section> */}
+            <section className="section" id="about">
                 <div className="container">
                     <div className="section-header col-lg-7">
                         <h1>
@@ -277,13 +353,13 @@ import React ,{ useState }from 'react';
                             <img src={process.env.PUBLIC_URL +"/assets/img/about.jpg"} className="img-fluid" />
                         </div>
                         <div className="col-md-6 col-lg-5">
-                            <div class="about">
+                            <div className="about">
                                 <h2>Our Story</h2>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since
                                 </p>
                             </div>
-                            <div class="about">
+                            <div className="about">
                                 <h2>Mission</h2>
                                 <p>
                                     Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ea commodo consequat.
@@ -293,7 +369,7 @@ import React ,{ useState }from 'react';
                         <div className="col-lg-8">
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <div class="about">
+                                    <div className="about">
                                         <h2>How We Support ?</h2>
                                         <p>
                                             Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -301,7 +377,7 @@ import React ,{ useState }from 'react';
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div class="about">
+                                    <div className="about">
                                         <h2>Why Choose to Support us?</h2>
                                         <p>
                                             Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -313,7 +389,7 @@ import React ,{ useState }from 'react';
                     </div>
                 </div>
             </section>
-            <section className="section" id="team">
+            <section className="section bg-white" id="team">
                 <div className="container-fluid">
                     <div className="container">
                         <div className="section-header">
@@ -333,12 +409,12 @@ import React ,{ useState }from 'react';
                                 <div className="team-item">
                                     <div className="team-img">
                                         <img src={process.env.PUBLIC_URL +"/assets/img/team1.jpg"} />
-                                        <div class="team-social">
-                                            <ul class="global-list">
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
                                             </ul>
                                             </div>
                                     </div>
@@ -350,12 +426,12 @@ import React ,{ useState }from 'react';
                                 <div className="team-item">
                                     <div className="team-img">
                                         <img src={process.env.PUBLIC_URL +"/assets/img/team2.jpg"} />
-                                        <div class="team-social">
-                                            <ul class="global-list">
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
                                             </ul>
                                             </div>
                                     </div>
@@ -367,12 +443,12 @@ import React ,{ useState }from 'react';
                                 <div className="team-item">
                                     <div className="team-img">
                                         <img src={process.env.PUBLIC_URL +"/assets/img/team3.jpg"} />
-                                        <div class="team-social">
-                                            <ul class="global-list">
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
                                             </ul>
                                             </div>
                                     </div>
@@ -384,12 +460,12 @@ import React ,{ useState }from 'react';
                                 <div className="team-item">
                                     <div className="team-img">
                                         <img src={process.env.PUBLIC_URL +"/assets/img/team4.jpg"} />
-                                        <div class="team-social">
-                                            <ul class="global-list">
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
                                             </ul>
                                             </div>
                                     </div>
@@ -401,12 +477,12 @@ import React ,{ useState }from 'react';
                                 <div className="team-item">
                                     <div className="team-img">
                                         <img src={process.env.PUBLIC_URL +"/assets/img/team2.jpg"} />
-                                        <div class="team-social">
-                                            <ul class="global-list">
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabindex="-1"><i class="fa fa-facebook"></i></a></li>
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
                                             </ul>
                                             </div>
                                     </div>
@@ -419,7 +495,7 @@ import React ,{ useState }from 'react';
                 </div>
             </section>
         </React.Fragment>
-    )
+    ) 
 }
 
 export default Home;
