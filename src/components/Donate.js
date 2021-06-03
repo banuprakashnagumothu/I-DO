@@ -4,7 +4,7 @@ import React ,{ useState }from 'react';
      const [menu,setMenu]=useState([{'menuItem':"sdsdsd"},{'menuItem':"2  item"}]);
     return(
         <React.Fragment>
-             <section className="mt-3">
+             <section className="py-5">
             <div className="container">
                 <div className="row mb-4">
                     <div className="col-12 col-md-5">
@@ -18,7 +18,7 @@ import React ,{ useState }from 'react';
                             By adhering to all safety and hygiene measures, Akshaya Patra has begun its relief service by providing meal or packed grocery kits to the marginalised and low-income segment of the society comprising of daily wage workers, migrant labourers, construction site workers, and needy people at old age homes and night shelters. Presently, the Foundation and its Association Foundations are providing food relief in, Rajasthan, Karnataka, Telangana, Gujarat, Maharashtra, NCR, Uttar Pradesh, Andhra Pradesh, Tamil Nadu, Chhattisgarh, Odisha, Assam, Madhya Pradesh, Uttarakhand ,Tripura ,West Bengal , Punjab , Jharkhand and Himachal Pradesh.
                         </p>
                     </div>
-                    <div className="col-12 col-md-6 col-lg-8ßßß mx-auto mb-4">
+                    <div className="col-12 col-md-6 mx-auto mb-4">
                         <h1 className="section-heading">
                             I Would Like To Contribute For COVID-19 Relief Service * :
                         </h1>

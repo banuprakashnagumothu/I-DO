@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Home from './components/Home';
 import Donate from './components/Donate';
+import About from './components/About';
 
 import {
   BrowserRouter as Router,
@@ -18,6 +19,10 @@ function App() {
 
      <Route path='/donate' exact>
        <Donate />
+     </Route>
+
+     <Route path='/about' exact>
+       <About />
      </Route>
    
    </Router>

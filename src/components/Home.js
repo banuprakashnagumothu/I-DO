@@ -147,36 +147,36 @@ import  Ticker from '../ticker';
             <section className="section bg-white services-count-list">
                 <div className="container">
                     <div className="row text-center">
-                        <div className="col-4 d-flex flex-column service-count-wrapper"> 
+                        <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper"> 
                          <Ticker className="service-count" end={31}  />
-<div className="service-count-name">Habitations</div>
+                            <div className="service-count-name">Habitations</div>
                          </div>
-                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
                          <Ticker className="service-count" end={50}  />
 <div className="service-count-name">Community health workers trained</div>
                          </div>
-                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
                          <Ticker className="service-count" end={4300}  />
 <div className="service-count-name">Population covered </div>
                          </div>
-                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
                          <Ticker className="service-count" end={14}  />
 <div className="service-count-name">
 Bridge schools 
  </div>
                          </div>
-                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
                          <Ticker className="service-count" end={432}  />
 <div className="service-count-name">
 Students </div>
                          </div>
-                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
                          <Ticker className="service-count" end={432}  />
 <div className="service-count-name">
 Mid-day meals provided 
  </div>
                          </div>
-                         <div className="col-4 d-flex flex-column service-count-wrapper">  
+                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
                          <Ticker className="service-count" end={1000}  />
 <div className="service-count-name">
 Nutrition powder provided 

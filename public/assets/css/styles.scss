@@ -6,9 +6,15 @@
 body {
     color: #464646;
     background-color: #f7f7f7;
-      overflow-y: scroll;
-  
-  
+      overflow-y: scroll;  
+}
+
+body {
+  background: red;
+}
+
+button {
+  white-space: nowrap;
 }
 
 a {
@@ -36,8 +42,29 @@ header {
     // left: 0;
     // right: 0;
     z-index: 2;
+
+    .navbar-brand {
+      align-items: center;
+      font-size: 16px;
+      text-transform: uppercase;
+      max-width: 30%;
+      white-space: normal;
+    
+      .logo-circle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        color: #761540;
+        border-radius: 50%;
+        background: #fff;
+      }
+    }
     .nav-item {
-        padding: 0 15px;
+        padding: 0 5px;
     }
 
     .nav-link {
@@ -70,6 +97,7 @@ header {
         background-color: transparent;
         position: relative;
         overflow: hidden;
+        white-space: nowrap;
 
         &::before {
             position: absolute;
@@ -583,69 +611,12 @@ header {
     }
   }
   
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-  
-  .mb-3 {
-    margin-bottom: 1rem;
-  }
-  
-  .mb-4 {
-    margin-bottom: 2rem;
-  }
-  
-  .mb-5 {
-    margin-bottom: 3rem;
-  }
-  
-  .p-3 {
-    padding: 1rem;
-  }
-  
-  .p-4 {
-    padding: 2rem;
-  }
-  
-  .p-5 {
-    padding: 3rem;
-  }
-  
-  .mx-auto {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
   .overflow-auto {
     overflow: auto;
   }
   
-  .position-relative {
-    position: relative;
-  }
-  
   .pointer {
     cursor: pointer;
-  }
-  
-  .container {
-    padding: 0 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    @include breakpoint-up(medium) {
-      max-width: 45rem;
-    }
-  
-    @include breakpoint-up(large) {
-      max-width: 60rem;
-    }
-  
-    @include breakpoint-up(xlarge) {
-      max-width: 71.25rem;
-    }
   }
   
   @keyframes checkAnimation {
@@ -745,14 +716,8 @@ header {
   }
   
   header {
-    padding: 0.8rem 0;
-   
+    padding: 0.5rem 0;
     background-color: $redColor;
-  
-    @include breakpoint-up(medium) {
-      & {
-        padding: 0.8rem 1rem;
-      }
     }
   
     nav {
@@ -798,7 +763,7 @@ header {
         display: inline-flex;
       }
   
-      @include navbar-btn;
+      //@include navbar-btn;
     }
   
     .logo {
@@ -847,8 +812,138 @@ header {
         }
       }
     }
+  
+
+    .page-section {
+      position: relative;
+      padding: 100px 15px;
+      background: #000 url('../img/aboutus.jpg') no-repeat center / cover;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+      }
+
+      @media only screen and (min-width: 768px) {
+        & {
+          background-attachment: fixed;
+        }
+      }
+
+    a {
+      color: #fff;
+      font-size: 1.125rem;
+    }
+    .breadcrumb-item.active {
+      color: #fff;
+      font-size: 1.125rem;
+    }
+    .breadcrumb-item+.breadcrumb-item {
+      &::before {
+        color: #fff;
+      }
+    }
+  }
+  .page-name {
+    color: #fff;
+  }
+  .section-header {
+    h1 {
+      span {
+        color: #00aeef;
+      }
+    }
+  }
+  .promotions-fluid {
+    padding: 50px 15px;
+    background: #181818;
+
+    @media only screen and (min-width: 992px) {
+      & {
+        padding: 100px 15px;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      & .promotion-box:not(:last-child) {
+        margin-bottom: 2rem
+      }
+    }
   }
   
+  .promotion-box {
+    color: #fff;
+    p {
+      margin: 0;
+    }
+  }
+  .promotions-heading {
+    color: #fff;
+    span {
+      color: #00aeef;
+    }
+  }
+  form {
+    .form-control {
+      border-radius: 4px;
+      height: 50px;
+      border-color: #ced4da;
+      padding: 6px 20px;
+      margin-bottom: 30px;
+    }
+    textarea.form-control {
+      height: auto;
+      padding: 1rem;
+    }
+    .btn-primary {
+      height: 50px;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 15px;
+      border: 1px solid #00aeef;
+      background: #00aeef;
+      &:hover {
+        color: #00aeef;
+        border-color: #00aeef;
+        background: transparent;
+      }
+    }
+  }
+  .google-map {
+    position: relative;
+    padding-bottom: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .page-section {
+      background-attachment: fixed;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .promotions-fluid {
+      padding: 100px 15px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .promotions-fluid {
+      .promotion-box {
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  } 
+    
   .main-heading {
     font-size: 1.3rem;
     color: $primaryColor;
@@ -953,7 +1048,6 @@ header {
   .personalinfo-wrapper {
     padding: 2rem;
     border-radius: 5px;
-    background: aliceblue;
   }
   
   .personalinfo-heading {
