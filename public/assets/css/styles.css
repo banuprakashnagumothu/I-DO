@@ -35,10 +35,6 @@ body {
   overflow-y: scroll;
 }
 
-body {
-  background: red;
-}
-
 button {
   white-space: nowrap;
 }

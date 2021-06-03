@@ -1,3 +1,5 @@
+import { NavLink,Link } from "react-router-dom";
+
 function Header(){
     return(
         <header>
@@ -18,7 +20,7 @@ function Header(){
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <NavLink activeClassName="active" className="nav-link"  to="/" exact={true}>Home</NavLink>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#services">Services</a>
@@ -33,16 +35,16 @@ function Header(){
                                 <a className="nav-link" href="#blog">Blog</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href={process.env.PUBLIC_URL+'/donate'}>About Us</a>
+                                <NavLink className="nav-link" activeClassName="active" to={process.env.PUBLIC_URL+'/about'}>About Us</NavLink>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Page</a>
                             </li>
                             <li className="nav-item">
-                             <a href={process.env.PUBLIC_URL+'/donate'}>   <button className="btn header__btndonate">
+                             <NavLink to={process.env.PUBLIC_URL+'/donate'} activeClassName="active">   <button className="btn header__btndonate">
                                     Donate Now
                                 </button>
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </div>

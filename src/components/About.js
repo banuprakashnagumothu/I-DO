@@ -129,7 +129,7 @@ import React ,{ useState }from 'react';
                             </div>
                             <div className="col-lg-6">
                                 <div className="google-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.337690916013!2d78.41685201487785!3d17.491386188016318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb914870e1bea3%3A0x1c6849a19b305cd4!2sVijaya%20Kirana%20Store!5e0!3m2!1sen!2sin!4v1622363446452!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3169830003!2d78.26795798723583!3d17.412299800563062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1622683949146!5m2!1sen!2sin"  allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </div>
                         </div>
