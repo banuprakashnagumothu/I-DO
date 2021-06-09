@@ -67,7 +67,7 @@ header {
     .nav-link {
         position: relative;
         color: $white;
-
+        padding: .5rem .8rem !important;
         &::before {
             position: absolute;
             content: "";
@@ -152,9 +152,11 @@ header {
     }
     &_actionbtn {
         @include btnStyles;
-        font-weight: 500;
+        font-weight: 400;
         text-transform: capitalize;
-        padding: .9375rem 2.1875rem;
+        padding: .9375rem 1.1875rem;
+        margin-left: 12px;
+        margin-bottom: 12px;
     }
 }
 
@@ -290,6 +292,7 @@ header {
   background: yellow;
   padding: 30% 0px;
   color: white;
+  cursor: pointer;
   img{
     width: 120px;
   }
@@ -713,7 +716,7 @@ header {
   }
   
   header {
-    padding: 0.5rem 0;
+    padding: 0.9rem 0;
     background-color: $redColor;
     }
   
@@ -760,7 +763,7 @@ header {
         display: inline-flex;
       }
   
-      //@include navbar-btn;
+      @include navbar-btn;
     }
   
     .logo {
@@ -793,19 +796,33 @@ header {
       a {
         display: block;
         font-size: 14px;
-        padding: 0.5rem;
         transition: color ease-in-out 400ms;
         color: lighten($white, 5%);
-  
         &:hover,
         &:focus {
           color: $primaryColor;
         }
+
       }
-  
+      .dropdown-menu{
+        li{
+          margin: 0;
+        }
+        a{
+        color: black;
+       }
+
+      }
+      .dropdown{
+        &:hover,&:focus{
+          .dropdown-menu{
+            display: block;
+          }
+        }
+      }
       @include breakpoint-up(medium) {
         & li {
-          margin-left: 1rem;
+          // margin-left: 1rem;
         }
       }
     }
@@ -856,12 +873,12 @@ header {
     }
   }
   .promotions-fluid {
-    padding: 50px 15px;
+    padding: 30px 15px;
     background: #181818;
 
     @media only screen and (min-width: 992px) {
       & {
-        padding: 100px 15px;
+        padding: 40px 15px;
       }
     }
 
@@ -874,6 +891,7 @@ header {
   
   .promotion-box {
     color: #fff;
+    padding: 17px;
     p {
       margin: 0;
     }
@@ -928,7 +946,7 @@ header {
   }
   @media only screen and (min-width: 992px) {
     .promotions-fluid {
-      padding: 100px 15px;
+      padding: 40px 15px;
     }
   }
   @media only screen and (max-width: 991px) {
@@ -1070,7 +1088,10 @@ header {
       display: inline-block;
     }
   }
-  
+  .sub-heading{
+    color: #00aeef;
+    font-weight: bold;
+  }
   .btn-submit {
     display: block;
     margin-left: auto;
@@ -1084,6 +1105,30 @@ header {
     &:focus,
     &:active {
       background-color: lighten($primaryColor, 0);
+    }
+  }
+  ul.arrow {
+    font-size: 18px;
+	line-height: 1.5em;
+	margin: 5px 0 15px;
+	padding: 0;
+    li {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 20px;
+    
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 5px;
+        height: 5px;
+        background-color:black;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+      }
     }
   }
   

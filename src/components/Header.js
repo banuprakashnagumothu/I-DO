@@ -1,57 +1,83 @@
 import { NavLink,Link } from "react-router-dom";
-
+import React,{useState} from "react";
 function Header(){
+    const [activeMenu,setActiveMenu]=useState(false);
+    const activateMenu=()=>{
+        setActiveMenu(!activeMenu);
+    }
     return(
-        <header>
-            <nav className="navbar navbar-expand-lg p-0">
-                <div className="container">
-                    <a className="navbar-brand text-white" href="#">
-                        {/* <img src={process.env.PUBLIC_URL +"/assets/img/logo.png"}/> */}
-                        <span className="logo-circle">
-                            I-DO
-                        </span>
-                        <span className="d-none d-md-inline-block">
-                            Indigenous development organisation
-                        </span>
+        <React.Fragment> 
+            {/* <div className="d-md-none d-inline-flex justify-content-end w-100 "><NavLink to={process.env.PUBLIC_URL+'/donate'} activeClassName="active">   <button className="btn header__btndonate">
+        Donate Now
+    </button>
+    </NavLink>
+    </div> */}
+    <header>
+        <div className="container">
+            <nav>
+                <div className="nav-logo">
+                    <a href="javascript:void(0);" className="logo">
+                        I-DO
                     </a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <span>
+                        Indigenous Development Organization
+                    </span>
+                    <button className={(activeMenu?'nav-menu--open':'' )+" btn-navmenu"} id="nav-menu" onClick={activateMenu}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <NavLink activeClassName="active" className="nav-link"  to="/" exact={true}>Home</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#services">Services</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#causes">Causes</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#team">Team</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#blog">Blog</a>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link" activeClassName="active" to={process.env.PUBLIC_URL+'/about'}>About Us</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Page</a>
-                            </li>
-                            <li className="nav-item">
+                </div>
+                <div className={(activeMenu?'d-block':'')+" nav-listmenu"}>
+                    <ul className="nav-list">
+                        <li className="nav-item">
+                            <NavLink to={'/'} className="nav-link" exact>
+                                Home
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to={'/about'} className="nav-link" activeClassName={'active'}>  
+                                About Us
+                            </NavLink>
+                        </li>
+                        <li className="nav-item">
+                        <a className="dropdown nav-link">
+  <a className="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+     Our Work
+  </a>
+  <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><NavLink className="dropdown-item" to={'/services/primary-health-care'}>Primary Health Care</NavLink></li>
+    <li><NavLink className="dropdown-item" to={'/services/nutrition'}>Nutrition</NavLink></li>
+    <li><NavLink className="dropdown-item" to={'/services/education'}>Education</NavLink></li>
+    <li><NavLink className="dropdown-item" to={'/services/wash'}>Wash</NavLink></li>
+    <li><NavLink className="dropdown-item" to={'/services/sustainable-health'}>Sustainable Health</NavLink></li>
+    
+
+  </ul>
+</a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="javascript:void(0);" className="nav-link">
+                                Contact
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink className="nav-link" activeClassName="active" exact to={'/our-partners'}>Our partners</NavLink>
+                        </li>
+                        <li className="d-none d-md-inline-flex">
                              <NavLink to={process.env.PUBLIC_URL+'/donate'} activeClassName="active">   <button className="btn header__btndonate">
                                     Donate Now
                                 </button>
                                 </NavLink>
                             </li>
-                        </ul>
-                    </div>
+                   
+                      </ul>
                 </div>
             </nav>
-        </header>
-    )
+        </div>
+    </header>
+    </React.Fragment>
+)
 }
 
 export default Header;

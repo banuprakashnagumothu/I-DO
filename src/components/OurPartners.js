@@ -1,6 +1,6 @@
 import React ,{ useState }from 'react';
 import Footer from "./Footer";
- function About() {
+ function  OurPartners () {
      const [menu,setMenu]=useState([{'menuItem':"sdsdsd"},{'menuItem':"2  item"}]);
     return(
         <React.Fragment>
@@ -9,12 +9,14 @@ import Footer from "./Footer";
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item"><a href="#">Home</a></li>
-                            <li className="breadcrumb-item active" aria-current="page">About Us</li>
+                            <li className="breadcrumb-item active" aria-current="page">                    Our Partners    
+    
+</li>
                         </ol>
                     </nav>
                     <h1 className="page-name">
-                        About Us
-                    </h1>
+                    Our Partners    
+                                    </h1>
                 </div>
             </section>
             <main>
@@ -52,4 +54,4 @@ import Footer from "./Footer";
     )
 }
 
-export default About;
+export default OurPartners;

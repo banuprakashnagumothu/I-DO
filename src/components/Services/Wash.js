@@ -1,6 +1,6 @@
 import React ,{ useState }from 'react';
-import Footer from "./Footer";
- function About() {
+import Footer from "../Footer";
+ function Wash() {
      const [menu,setMenu]=useState([{'menuItem':"sdsdsd"},{'menuItem':"2  item"}]);
     return(
         <React.Fragment>
@@ -8,12 +8,12 @@ import Footer from "./Footer";
                 <div className="container position-relative">
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb">
-                            <li className="breadcrumb-item"><a href="#">Home</a></li>
-                            <li className="breadcrumb-item active" aria-current="page">About Us</li>
+                            <li className="breadcrumb-item"><a href="#">Our Work</a></li>
+                            <li className="breadcrumb-item active" aria-current="page">Wash</li>
                         </ol>
                     </nav>
                     <h1 className="page-name">
-                        About Us
+                        Wash
                     </h1>
                 </div>
             </section>
@@ -22,23 +22,21 @@ import Footer from "./Footer";
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-6 mb-4 mb-lg-0">
-                                <img src="../../assets/img/about-us.jpeg" className="img-fluid" />
+                                <img src="../../assets/img/team1.jpg" className="img-fluid" />
                             </div>
                             <div className="col-lg-6">
                                 <div className="section-header">
                                     <h1>
-                                    Our Motto is <span>Reaching the Unreachable</span>
+                                        People often think of <span>Charity As an Action</span>. But We think of Charity as a <span>State Of The Heart</span>
                                     </h1>
                                     <p>
-                                    I-DO is brainchild of Dr Narendar who always had the passion to serve the needy & the neglected population. 
+                                        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
                                     </p>
                                     <p class="sub-title title-before">
-                                    We work with an objective of providing universal, affordable & comprehensive primary health care to the most underserved and marginalized population in remote tribal/ hilly and /or insurgency areas.                                    </p>
+                                        Giving to those in need what they could be gaining from their own initiative may well be the kindest way to destroy people.
+                                    </p>
                                     <p>
-                                    I-DO has been working with the tribal community for the last 4 years in 31 tribal habitations providing preventive, promotive & curative health services. 
-<br/><br/>Bridge schools established within the habitation which earlier had no access to education.
-<br/><br/>To combat malnutrition & anaemia, we have formulated NUTRTION POWDER which is provided to Under-5 age children, Pregnant women & Lactating mothers
-
+                                        Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                                     </p>
                                 </div>
                             </div>
@@ -52,4 +50,4 @@ import Footer from "./Footer";
     )
 }
 
-export default About;
+export default Wash;

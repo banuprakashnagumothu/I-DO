@@ -1,4 +1,5 @@
 import React ,{ useState }from 'react';
+import { NavLink } from 'react-router-dom';
 import  Ticker from '../ticker';
  function Home() {
      const [menu,setMenu]=useState([{'menuItem':"sdsdsd"},{'menuItem':"2  item"}]);
@@ -19,11 +20,15 @@ import  Ticker from '../ticker';
                                         Your contribution <span>can help achieve a solution</span>
                                     </h3>
                                     <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since
-                                    </p>
+                                    Nelson Mandela has rightly said that “As long as poverty, injustice and gross inequality prevail in this world, none of us can truly rest. </p>
                                     <button className="btn banner_actionbtn">
                                         Become a volunteer
                                     </button>
+                                      <NavLink to={process.env.PUBLIC_URL+'/donate'} activeClassName="active">   <button className="btn banner_actionbtn">
+                                    Donate Now
+                                </button>
+                                </NavLink>
+                           
                                 </div>
                             </div>
                         </div>
@@ -66,7 +71,7 @@ import  Ticker from '../ticker';
                         <div className="section-header">
                             <div className="row align-items-center">
                                 <div className="col-lg-4">
-                                    <h1>Indigenous development organisation</h1>
+                                    <h1 className="text-capitalize">Indigenous development organisation</h1>
                                 </div>
                                 <div className="col-lg-8">
                                     <div className="section-desc sub-title ps-5">
@@ -109,36 +114,52 @@ import  Ticker from '../ticker';
                             </div>
                         </div> */}
                         <div className='row text-center'>
-                            <div className="col-md-4 col-lg-4 col-12 mt-3">
+                                <div className="col-md-4 col-lg-4 col-12 mt-3">
+                                <NavLink to={'/services/primary-health-care'}>
+
                              <div className="services-inner primary-health-care">
                                 <div className="mb-2"><img src='/assets/img/primary-health-care-ico.png'/></div>
                                 <h4>Primary Health Care</h4>
                             </div>
+                            </NavLink>
+
                             </div>
                             <div className="col-md-4 col-lg-4 col-12 mt-3">
+                            <NavLink to={'/services/nutrition'}>
+
                              <div className="services-inner nutrition">
                                 <div className="mb-2"><img src='/assets/img/nutrition-ico.png'/></div>
                                 <h4>Nutrition</h4>
                             </div>
+                            </NavLink>
                             </div>
                             <div className="col-md-4 col-lg-4 col-12 mt-3">
+                            <NavLink to={'/services/education'}>
+
                              <div className="services-inner education">
                                 <div className="mb-2"><img src='/assets/img/education-ico.png'/></div>
                                 <h4>Education</h4>
                             </div>
+                            </NavLink>
                             </div>
                             <div className="col-md-4 col-lg-4 col-12 mt-3">
+                            <NavLink to={'/services/wash'}>
+
                              <div className="services-inner wash">
                                 <div className="mb-2"><img src='/assets/img/wash.png'/></div>
                                 <h4>Wash</h4>
                             </div>
+                            </NavLink>
                             </div>
                             
                             <div className="col-md-4 col-lg-4 col-12 mt-3">
+                            <NavLink to={'/services/sustainable-health'}>
+
                              <div className="services-inner sustainable-health">
                                 <div className="mb-2"><img src='/assets/img/sustainable-health-ico.png'/></div>
                                 <h4>Sustainable Health</h4>
                             </div>
+                            </NavLink>
                             </div>
                         </div>
                     </div>
@@ -152,7 +173,7 @@ import  Ticker from '../ticker';
                             <div className="service-count-name">Habitations</div>
                          </div>
                          <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
-                         <Ticker className="service-count" end={50}  />
+                         <Ticker className="service-count" end={41}  />
 <div className="service-count-name">Community health workers trained</div>
                          </div>
                          <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
@@ -173,13 +194,13 @@ Students </div>
                          <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
                          <Ticker className="service-count" end={432}  />
 <div className="service-count-name">
-Mid-day meals provided 
+Mid-day meals provided Daily
  </div>
                          </div>
                          <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">  
                          <Ticker className="service-count" end={1000}  />
 <div className="service-count-name">
-Nutrition powder provided 
+Nutrition powder provided Daily
  </div>
                          </div>
 
@@ -344,29 +365,29 @@ Nutrition powder provided
                         <h1>
                             Who We Are
                         </h1>
-                        <p className="sub-title title-before">
-                            We make a difference in the lives of people during a very traumatic time in their life. Meeting their medical transport needs eases their burden.
+                        <p className="sub-title title-before"> We work with an objective of providing universal, affordable & comprehensive primary health care to the most underserved and marginalized population in remote tribal/ hilly and /or insurgency areas.
                         </p>
                     </div>
                     <div className="row">
-                        <div className="col-md-6 col-lg-7">
-                            <img src={process.env.PUBLIC_URL +"/assets/img/about.jpg"} className="img-fluid" />
+                        <div className="col-md-6 col-lg-6">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/qSDU6YgM7pw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            {/* <img src={process.env.PUBLIC_URL +"/assets/img/about.jpg"} className="img-fluid" /> */}
                         </div>
-                        <div className="col-md-6 col-lg-5">
+                        <div className="col-md-6 col-lg-6">
                             <div className="about">
                                 <h2>Our Story</h2>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since
+                                I-DO has been working with the tribal community for the last 4 years in 31 tribal habitations providing preventive, promotive & curative health services. 
                                 </p>
                             </div>
                             <div className="about">
                                 <h2>Mission</h2>
                                 <p>
-                                    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ea commodo consequat.
+                                To combat malnutrition & anaemia, provide basic education and comprehensive health care services to the needy through sustainable model
                                 </p>
                             </div>
                         </div>
-                        <div className="col-lg-8">
+                        {/* <div className="col-lg-8">
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="about">
@@ -385,7 +406,7 @@ Nutrition powder provided
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

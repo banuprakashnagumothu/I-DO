@@ -9,13 +9,13 @@ import React ,{ useState }from 'react';
                 <div className="row mb-4">
                     <div className="col-12 col-md-5">
                         <h1 className="main-heading">
-                            SUPPORT AKSHAYA PATRA'S COVID-19 RELIEF SERVICE
+                            SUPPORT  COVID-19 RELIEF SERVICE
                         </h1>
                         <p>
-                            As the COVID-19 crisis continues to loom over us, The Government of India has taken a strict combat measure by directing a lockdown of the entire nation. At this great hour of need, The Akshaya Patra Foundation, in close coordination with State Governments & District Administration, has stepped in to provide relief by providing food to thousands of people across the country.
+                            As the COVID-19 crisis continues to loom over us, The Government of India has taken a strict combat measure by directing a lockdown of the entire nation. At this great hour of need, The Foundation, in close coordination with State Governments & District Administration, has stepped in to provide relief by providing food to thousands of people across the country.
                         </p>
                         <p>
-                            By adhering to all safety and hygiene measures, Akshaya Patra has begun its relief service by providing meal or packed grocery kits to the marginalised and low-income segment of the society comprising of daily wage workers, migrant labourers, construction site workers, and needy people at old age homes and night shelters. Presently, the Foundation and its Association Foundations are providing food relief in, Rajasthan, Karnataka, Telangana, Gujarat, Maharashtra, NCR, Uttar Pradesh, Andhra Pradesh, Tamil Nadu, Chhattisgarh, Odisha, Assam, Madhya Pradesh, Uttarakhand ,Tripura ,West Bengal , Punjab , Jharkhand and Himachal Pradesh.
+                            By adhering to all safety and hygiene measures, has begun its relief service by providing meal or packed grocery kits to the marginalised and low-income segment of the society comprising of daily wage workers, migrant labourers, construction site workers, and needy people at old age homes and night shelters. Presently, the Foundation and its Association Foundations are providing food relief in, Rajasthan, Karnataka, Telangana, Gujarat, Maharashtra, NCR, Uttar Pradesh, Andhra Pradesh, Tamil Nadu, Chhattisgarh, Odisha, Assam, Madhya Pradesh, Uttarakhand ,Tripura ,West Bengal , Punjab , Jharkhand and Himachal Pradesh.
                         </p>
                     </div>
                     <div className="col-12 col-md-6 mx-auto mb-4">
