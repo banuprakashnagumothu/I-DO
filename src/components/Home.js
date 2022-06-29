@@ -1,17 +1,32 @@
 import React ,{ useState }from 'react';
 import { NavLink } from 'react-router-dom';
 import  Ticker from '../ticker';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
  function Home() {
      const [menu,setMenu]=useState([{'menuItem':"sdsdsd"},{'menuItem':"2  item"}]);
-    //  async function getData(){
-    //      const data = await fetch('https://jsonplaceholder.typicode.com/posts');
-    //      setMenu(await data.json());
-    //      };
-    //      getData();
     return(
         <React.Fragment>
-            <section className="banner" id="banner">
-                <div className="container-fluid">
+            <section className="position-relative" id="banner">
+            <Carousel infiniteLoop={true} autoPlay={true} showStatus={false}>
+
+                <div className="banner" style={{background: "#999 url('/assets/img/banner/community_healty_worker_training.jpg') no-repeat center / cover"}}>
+            </div>
+            <div className="banner" style={{background: "#999 url('/assets/img/banner/bridge_school.jpg') no-repeat center / cover"}}>
+            </div>
+            <div className="banner" style={{background: "#999 url('/assets/img/banner/filters.jpg') no-repeat center / cover"}}>
+                </div>
+            <div className="banner" style={{background: "#999 url('/assets/img/banner/malnutrition.jpg') no-repeat center / cover"}}>
+              </div>
+            <div className="banner" style={{background: "#999 url('/assets/img/banner/health_camp.jpg') no-repeat center / cover"}}>
+             </div>
+            <div className="banner" style={{background: "#999 url('/assets/img/banner/nutrition_powder_spot_feeding.jpg') no-repeat center / cover"}} >
+            </div>
+            <div className="banner" style={{background: "#999 url('/assets/img/banner/mother_child_health_cards.jpg') no-repeat center / cover"}} >
+            </div>
+          
+            </Carousel>
+            <div className="container-fluid banner-text-container">
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-lg-7">
@@ -19,9 +34,10 @@ import  Ticker from '../ticker';
                                     <h3>
                                         Your contribution <span>can help achieve a solution</span>
                                     </h3>
-                                    <p>
-                                    Nelson Mandela has rightly said that “As long as poverty, injustice and gross inequality prevail in this world, none of us can truly rest. </p>
-                                    <button className="btn banner_actionbtn">
+                                    {/* <p>
+                                    Malnutrition
+                                    </p> */}
+                                                                        <button className="btn banner_actionbtn">
                                         Become a volunteer
                                     </button>
                                       <NavLink to={process.env.PUBLIC_URL+'/donate'} activeClassName="active">   <button className="btn banner_actionbtn">
@@ -32,43 +48,47 @@ import  Ticker from '../ticker';
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="row features__row">
-                            <div className="col-12 col-lg-4">
-                                <div className="features">
-                                    <div className="features-icon">
-                                        <img src={process.env.PUBLIC_URL +"/assets/img/featured1.png"} className="img-fluid" />
-                                    </div>
-                                    <h2>Our World</h2>
-                                    <h3>We are in 32 Countries</h3>
-                                </div>
+                     </div>
+                </div>
+           
+            </section>
+            <section className="section" id="about">
+                <div className="container">
+                    <div className="section-header col-lg-7">
+                        <h1>
+                            Who We Are
+                        </h1>
+                        <p className="sub-title title-before"> We work with an objective of providing universal, affordable & comprehensive primary health care to the most underserved and marginalized population in remote tribal/ hilly and /or insurgency areas.
+                        </p>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-6 col-lg-6">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/qSDU6YgM7pw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            {/* <img src={process.env.PUBLIC_URL +"/assets/img/about.jpg"} className="img-fluid" /> */}
+                        </div>
+                        <div className="col-md-6 col-lg-6">
+                            <div className="about">
+                                <h2>Our Story</h2>
+                                <p>
+                                I-DO has been working with the tribal community for the last 4 years in 31 tribal habitations providing preventive, promotive & curative health services. 
+                                </p>
                             </div>
-                            <div className="col-12 col-lg-4">
-                                <div className="features">
-                                    <div className="features-icon">
-                                        <img src={process.env.PUBLIC_URL +"/assets/img/featured2.png"} className="img-fluid" />
-                                    </div>
-                                    <h2>Our Promise</h2>
-                                    <h3>59% Of all $ goes to Programs</h3>
-                                </div>
+                            <div className="about">
+                                <h2>Mission</h2>
+                                <p>
+                                We work with marginalized communities – tribal, rural, women and children – bringing healthcare awareness, providing access to basic education and bringing in community empowering models to address those challenges. The model focuses to reduce deaths, diseases, malnutrition & illiteracy.
+                                </p>
                             </div>
-                            <div className="col-12 col-lg-4">
-                                <div className="features">
-                                    <div className="features-icon">
-                                        <img src={process.env.PUBLIC_URL +"/assets/img/featured3.png" } className="img-fluid" />
-                                    </div>
-                                    <h2>Our Reach</h2>
-                                    <h3>We are in 32 Countries</h3>
-                                </div>
-                            </div>
-                        </div> */}
+                        </div>
+                        
                     </div>
                 </div>
             </section>
-
-            <section className="section" id="services">
+            
+            <section className="section bg-white" id="services">
                 <div className="container-fluid">
                     <div className="container">
-                        <div className="section-header">
+                        {/* <div className="section-header">
                             <div className="row align-items-center">
                                 <div className="col-lg-4">
                                     <h1 className="text-capitalize">Indigenous development organisation</h1>
@@ -79,8 +99,8 @@ import  Ticker from '../ticker';
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        {/* <div className="row text-center">
+                        </div> 
+                        <div className="row text-center">
                        <div className="col-lg-4">
                                 <div className="service-box">
                                     <div className="service-icon">
@@ -142,7 +162,7 @@ import  Ticker from '../ticker';
                             </div>
                             </NavLink>
                             </div>
-                            <div className="col-md-4 col-lg-4 col-12 mt-3">
+                            {/* <div className="col-md-4 col-lg-4 col-12 mt-3">
                             <NavLink to={'/services/wash'}>
 
                              <div className="services-inner wash">
@@ -150,7 +170,7 @@ import  Ticker from '../ticker';
                                 <h4>Wash</h4>
                             </div>
                             </NavLink>
-                            </div>
+                            </div> */}
                             
                             <div className="col-md-4 col-lg-4 col-12 mt-3">
                             <NavLink to={'/services/sustainable-health'}>
@@ -165,7 +185,7 @@ import  Ticker from '../ticker';
                     </div>
                 </div>
             </section>
-            <section className="section bg-white services-count-list">
+            <section className="sectionservices-count-list">
                 <div className="container">
                     <div className="row text-center">
                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper"> 
@@ -207,7 +227,112 @@ Nutrition powder provided Daily
                     </div>
                 </div>
             </section>
-            {/* <section className="section bg-white" id="causes">
+             <section className="section bg-white" id="team">
+                <div className="container-fluid">
+                    <div className="container">
+                        <div className="section-header">
+                            <div className="row align-items-center">
+                                <div className="col-lg-4">
+                                    <h1>Meet with our happy Volunteers</h1>
+                                </div>
+                                <div className="col-lg-8">
+                                    <div className="section-desc sub-title ps-5">
+                                        We make a difference in the lives of people during a very traumatic time in their life. Meeting their medical transport needs eases their burden.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="owl-theme owl-carousel" id="teamSlider">
+                            <div className="team-wrapper">
+                                <div className="team-item">
+                                    <div className="team-img">
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team1.jpg"} />
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
+                                            </ul>
+                                            </div>
+                                    </div>
+                                    <h2>Jenifar Tulip</h2>
+                                    <span>Field Supervisor</span>
+                                </div>
+                            </div>
+                            <div className="team-wrapper">
+                                <div className="team-item">
+                                    <div className="team-img">
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team2.jpg"} />
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
+                                            </ul>
+                                            </div>
+                                    </div>
+                                    <h2>Adam Rayan </h2>
+                                    <span>Project Manager</span>
+                                </div>
+                            </div>
+                            <div className="team-wrapper">
+                                <div className="team-item">
+                                    <div className="team-img">
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team3.jpg"} />
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
+                                            </ul>
+                                            </div>
+                                    </div>
+                                    <h2>Maria Ket</h2>
+                                    <span>Communication Manager</span>
+                                </div>
+                            </div>
+                            <div className="team-wrapper">
+                                <div className="team-item">
+                                    <div className="team-img">
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team4.jpg"} />
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
+                                            </ul>
+                                            </div>
+                                    </div>
+                                    <h2>Justine Baker</h2>
+                                    <span>Program Co-Ordinator</span>
+                                </div>
+                            </div>
+                            <div className="team-wrapper">
+                                <div className="team-item">
+                                    <div className="team-img">
+                                        <img src={process.env.PUBLIC_URL +"/assets/img/team2.jpg"} />
+                                        <div className="team-social">
+                                            <ul className="global-list">
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
+                                            </ul>
+                                            </div>
+                                    </div>
+                                    <h2>Maria Ket</h2>
+                                    <span>Communication Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      {/* <section className="section bg-white" id="causes">
                 <div className="container">
                     <div className="section-header col-lg-7">
                         <h1>
@@ -359,162 +484,7 @@ Nutrition powder provided Daily
                     </div>
                 </div>
             </section> */}
-            <section className="section" id="about">
-                <div className="container">
-                    <div className="section-header col-lg-7">
-                        <h1>
-                            Who We Are
-                        </h1>
-                        <p className="sub-title title-before"> We work with an objective of providing universal, affordable & comprehensive primary health care to the most underserved and marginalized population in remote tribal/ hilly and /or insurgency areas.
-                        </p>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-6 col-lg-6">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/qSDU6YgM7pw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            {/* <img src={process.env.PUBLIC_URL +"/assets/img/about.jpg"} className="img-fluid" /> */}
-                        </div>
-                        <div className="col-md-6 col-lg-6">
-                            <div className="about">
-                                <h2>Our Story</h2>
-                                <p>
-                                I-DO has been working with the tribal community for the last 4 years in 31 tribal habitations providing preventive, promotive & curative health services. 
-                                </p>
-                            </div>
-                            <div className="about">
-                                <h2>Mission</h2>
-                                <p>
-                                To combat malnutrition & anaemia, provide basic education and comprehensive health care services to the needy through sustainable model
-                                </p>
-                            </div>
-                        </div>
-                        {/* <div className="col-lg-8">
-                            <div className="row">
-                                <div className="col-lg-6">
-                                    <div className="about">
-                                        <h2>How We Support ?</h2>
-                                        <p>
-                                            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-6">
-                                    <div className="about">
-                                        <h2>Why Choose to Support us?</h2>
-                                        <p>
-                                            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-                    </div>
-                </div>
-            </section>
-            <section className="section bg-white" id="team">
-                <div className="container-fluid">
-                    <div className="container">
-                        <div className="section-header">
-                            <div className="row align-items-center">
-                                <div className="col-lg-4">
-                                    <h1>Meet with our happy Volunteers</h1>
-                                </div>
-                                <div className="col-lg-8">
-                                    <div className="section-desc sub-title ps-5">
-                                        We make a difference in the lives of people during a very traumatic time in their life. Meeting their medical transport needs eases their burden.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="owl-theme owl-carousel" id="teamSlider">
-                            <div className="team-wrapper">
-                                <div className="team-item">
-                                    <div className="team-img">
-                                        <img src={process.env.PUBLIC_URL +"/assets/img/team1.jpg"} />
-                                        <div className="team-social">
-                                            <ul className="global-list">
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
-                                            </ul>
-                                            </div>
-                                    </div>
-                                    <h2>Jenifar Tulip</h2>
-                                    <span>Field Supervisor</span>
-                                </div>
-                            </div>
-                            <div className="team-wrapper">
-                                <div className="team-item">
-                                    <div className="team-img">
-                                        <img src={process.env.PUBLIC_URL +"/assets/img/team2.jpg"} />
-                                        <div className="team-social">
-                                            <ul className="global-list">
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
-                                            </ul>
-                                            </div>
-                                    </div>
-                                    <h2>Adam Rayan </h2>
-                                    <span>Project Manager</span>
-                                </div>
-                            </div>
-                            <div className="team-wrapper">
-                                <div className="team-item">
-                                    <div className="team-img">
-                                        <img src={process.env.PUBLIC_URL +"/assets/img/team3.jpg"} />
-                                        <div className="team-social">
-                                            <ul className="global-list">
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
-                                            </ul>
-                                            </div>
-                                    </div>
-                                    <h2>Maria Ket</h2>
-                                    <span>Communication Manager</span>
-                                </div>
-                            </div>
-                            <div className="team-wrapper">
-                                <div className="team-item">
-                                    <div className="team-img">
-                                        <img src={process.env.PUBLIC_URL +"/assets/img/team4.jpg"} />
-                                        <div className="team-social">
-                                            <ul className="global-list">
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
-                                            </ul>
-                                            </div>
-                                    </div>
-                                    <h2>Justine Baker</h2>
-                                    <span>Program Co-Ordinator</span>
-                                </div>
-                            </div>
-                            <div className="team-wrapper">
-                                <div className="team-item">
-                                    <div className="team-img">
-                                        <img src={process.env.PUBLIC_URL +"/assets/img/team2.jpg"} />
-                                        <div className="team-social">
-                                            <ul className="global-list">
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-pinterest-p"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-instagram"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-twitter"></i></a></li>
-                                            <li><a href="#" tabIndex="-1"><i className="fa fa-facebook"></i></a></li>
-                                            </ul>
-                                            </div>
-                                    </div>
-                                    <h2>Maria Ket</h2>
-                                    <span>Communication Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
         </React.Fragment>
     ) 
 }

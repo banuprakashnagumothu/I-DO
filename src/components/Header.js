@@ -46,10 +46,10 @@ function Header(){
      Our Work
   </a>
   <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><NavLink className="dropdown-item" to={'/services/primary-health-care'}>Primary Health Care</NavLink></li>
+    <li><NavLink className="dropdown-item" to={'/services/health-care'}>Health Care</NavLink></li>
+ 
     <li><NavLink className="dropdown-item" to={'/services/nutrition'}>Nutrition</NavLink></li>
     <li><NavLink className="dropdown-item" to={'/services/education'}>Education</NavLink></li>
-    <li><NavLink className="dropdown-item" to={'/services/wash'}>Wash</NavLink></li>
     <li><NavLink className="dropdown-item" to={'/services/sustainable-health'}>Sustainable Health</NavLink></li>
     
 

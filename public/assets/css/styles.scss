@@ -114,7 +114,6 @@ header {
         }
     }
 }
-
 .banner {
     position: relative;
     z-index: 1;
@@ -131,8 +130,6 @@ header {
         background: rgba(0,0,0,.4);
     }
     &-text {
-        color: $white;
-        padding: 20% 0 0;
         // padding: 260px 0 140px;
         
         h1 {
@@ -846,6 +843,7 @@ header {
         & {
           background-attachment: fixed;
         }
+        
       }
 
     a {
@@ -1131,4 +1129,35 @@ header {
       }
     }
   }
+  @media only screen and (min-width:768px){
+    .banner-text-container{
+      color: $white;
+      position: absolute;
+      top: 0;
+      left:0;
+    }
+    .banner-text{
+      padding: 20% 0 0;
+    }
+  }
   
+  .healthcare-tabs {
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    li {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  button.nav-link{
+    color: #fff;
+    border-radius: 0;
+    border: 0;
+    background-color: #999;
+
+    &.active {
+      color: #fff;
+      background-color: $primaryColor;
+    }
+  }
+  }
+}

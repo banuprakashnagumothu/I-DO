@@ -9,13 +9,13 @@ import Footer from "./Footer";
                     <nav aria-label="breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item"><a href="#">Home</a></li>
-                            <li className="breadcrumb-item active" aria-current="page">                    Our Partners    
+                            <li className="breadcrumb-item active" aria-current="page">                    Gallery   
     
 </li>
                         </ol>
                     </nav>
                     <h1 className="page-name">
-                    Our Partners    
+                    Gallery    
                                     </h1>
                 </div>
             </section>
@@ -25,37 +25,8 @@ import Footer from "./Footer";
                         <div className="row">
                             <div className="col-12 text-center">
                                 <h4>Partners</h4>
-                                <ul className="text-bold">
-                                    <li>Karuna Trust</li>
-<li>Rural Hope Foundation (USA)</li>
-<li>Netcracker Technology Solutions Pvt Ltd
-</li>
-<li>Association for India’s Development (AID-USA)
-</li>
-<li>Issar Pharmaceuticals Pvt Ltd</li>
-<li>ARPAN</li>
-<li>TNR Trust</li>
-<li>Robin Hood Army Hyderabad (RHA)
-</li>
-<li>Samaritans-For the Nation
-</li>
-<li>Niswartha Foundation</li>
-<li>Bring a Smile Foundation
-</li>
-<li>Save the Child Foundation
-</li>
-<li>TechieRide</li>
-<li>Qvantel Software Solution Ltd
-</li>
-<li>1968 Batch, Gandhi Medical College NRI Doctors 
-</li>
-<li>
-IMA Women’s Wing –Nalgonda
-</li>
-<li>Street NGO
-</li>
-</ul>
-                            </div>
+                                
+                             </div>
                            </div>
                     </div>
                 </section>

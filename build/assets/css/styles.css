@@ -173,11 +173,6 @@ header .header__btndonate:hover::before {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.banner-text {
-  color: #fff;
-  padding: 20% 0 0;
-}
-
 .banner-text h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -1250,5 +1245,39 @@ ul.arrow li::before {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner-text-container {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .banner-text {
+    padding: 20% 0 0;
+  }
+}
+
+.healthcare-tabs {
+  overflow-y: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.healthcare-tabs li:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.healthcare-tabs li button.nav-link {
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+  background-color: #999;
+}
+
+.healthcare-tabs li button.nav-link.active {
+  color: #fff;
+  background-color: #014df9;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -27,7 +27,7 @@ import Footer from "./Footer";
                             <div className="col-lg-6">
                                 <div className="section-header">
                                     <h1>
-                                    Our Motto is <span>Reaching the Unreachable</span>
+                                    Our Motto is <span>Hope for the hopeless</span>
                                     </h1>
                                     <p>
                                     I-DO is brainchild of Dr Narendar who always had the passion to serve the needy & the neglected population. 

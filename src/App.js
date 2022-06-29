@@ -16,6 +16,8 @@ import Education from './components/Services/Education';
 import Wash from './components/Services/Wash';
 import SustainableHealth from './components/Services/SustainableHealth';
 import OurPartners from './components/OurPartners';
+import MotherChildHealthCare from './components/Services/MotherChildHealthCare';
+import HealthCare from './components/Services/HealthCare';
 function App() {
   return (
      <Router basename={process.env.PUBLIC_URL}>
@@ -28,9 +30,20 @@ function App() {
      <Route path='/donate' exact>
        <Donate />
      </Route>
+
+     <Route path='/services/health-care' exact>
+     <HealthCare />
+     </Route>
+    
+
+
      <Route path='/services/primary-health-care' exact>
      <PrimaryHealthCare />
      </Route>
+     <Route path='/services/mother-child-health-care' exact>
+     <MotherChildHealthCare />
+     </Route>
+    
      <Route path='/services/nutrition' exact>
      <Nutrition />
      </Route>
