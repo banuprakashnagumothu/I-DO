@@ -6,6 +6,12 @@
 body {
     color: #464646;
     background-color: #f7f7f7;
+      overflow-y: scroll;  
+}
+
+
+button {
+  white-space: nowrap;
 }
 
 a {
@@ -33,14 +39,35 @@ header {
     // left: 0;
     // right: 0;
     z-index: 2;
+
+    .navbar-brand {
+      align-items: center;
+      font-size: 16px;
+      text-transform: uppercase;
+      max-width: 30%;
+      white-space: normal;
+    
+      .logo-circle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        color: #761540;
+        border-radius: 50%;
+        background: #fff;
+      }
+    }
     .nav-item {
-        padding: 0 15px;
+        padding: 0 5px;
     }
 
     .nav-link {
         position: relative;
         color: $white;
-
+        padding: .5rem .8rem !important;
         &::before {
             position: absolute;
             content: "";
@@ -67,6 +94,7 @@ header {
         background-color: transparent;
         position: relative;
         overflow: hidden;
+        white-space: nowrap;
 
         &::before {
             position: absolute;
@@ -86,12 +114,11 @@ header {
         }
     }
 }
-
 .banner {
     position: relative;
     z-index: 1;
     background: #999 url('../img/banner-bg.jpg') no-repeat center / cover;
-
+    height: 380px;
     &::before {
         position: absolute;
         content: '';
@@ -103,8 +130,7 @@ header {
         background: rgba(0,0,0,.4);
     }
     &-text {
-        color: $white;
-        padding: 260px 0 140px;
+        // padding: 260px 0 140px;
         
         h1 {
             font-size: 3rem;
@@ -123,18 +149,20 @@ header {
     }
     &_actionbtn {
         @include btnStyles;
-        font-weight: 500;
+        font-weight: 400;
         text-transform: capitalize;
-        padding: .9375rem 2.1875rem;
+        padding: .9375rem 1.1875rem;
+        margin-left: 12px;
+        margin-bottom: 12px;
     }
 }
 
 .section {
-    padding: 100px 0 80px;
+    padding: 50px 0 40px;
 
     &-header {
         font-size: 16px;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
 
         & h1{
             font-size: 32px;
@@ -159,7 +187,7 @@ header {
 }
 
 .features__row {
-    padding-bottom: 100px;
+    padding-top: 48px;
 }
 
 .features {
@@ -169,8 +197,8 @@ header {
 
     &-icon {
         display: inline-block;
-        width: 60px;
-        margin-bottom: 30px;
+        width: 42px;
+        margin-bottom: 10px;
     }
 
     h2 {
@@ -190,17 +218,17 @@ header {
 .section-desc {
     position: relative;
 
-    &:before {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        content: "\f105";
-        font-family: fontawesome;
-        font-size: 60px;
-        color: $primaryColor;
-        background-color: transparent;
-    }
+    // &:before {
+    //     position: absolute;
+    //     top: 50%;
+    //     transform: translateY(-50%);
+    //     left: 0;
+    //     content: "\f105";
+    //     font-family: fontawesome;
+    //     font-size: 60px;
+    //     color: $primaryColor;
+    //     background-color: transparent;
+    // }
 }
     
 .service-box{
@@ -257,7 +285,55 @@ header {
         }
     }
 }
+.services-inner{
+  background: yellow;
+  padding: 30% 0px;
+  color: white;
+  cursor: pointer;
+  img{
+    width: 120px;
+  }
+}
 
+.primary-health-care{
+  
+  background:#689f39 url("../img/image-24.jpg") no-repeat center / cover;
+  // background-position: center !important;
+  // background-repeat: no-repeat !important;
+  // background-size: cover !important;
+
+}
+.nutrition{
+  background:  #0090ff url("../img/image-26.jpg") no-repeat center / cover;  
+  
+
+}
+.education{
+  background:#ffb200 url("../img/image-27.jpg") no-repeat center / cover  ;
+
+}
+.wash {
+  background:  #0090ff url("../img/image-26.jpg") no-repeat center / cover;  
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+}
+.sustainable-health{
+  background: #e64a19 url("../img/image-25.jpeg") no-repeat center / cover  ;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+}
+.service-count-name{
+  font-size: 20px;
+}
+.service-count-wrapper{
+  font-size: 48px;
+  padding: 20px 0px;
+  font-weight: bold;
+}
 .causes {
     margin-bottom: 50px;
     overflow: hidden;
@@ -532,69 +608,12 @@ header {
     }
   }
   
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-  
-  .mb-3 {
-    margin-bottom: 1rem;
-  }
-  
-  .mb-4 {
-    margin-bottom: 2rem;
-  }
-  
-  .mb-5 {
-    margin-bottom: 3rem;
-  }
-  
-  .p-3 {
-    padding: 1rem;
-  }
-  
-  .p-4 {
-    padding: 2rem;
-  }
-  
-  .p-5 {
-    padding: 3rem;
-  }
-  
-  .mx-auto {
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
   .overflow-auto {
     overflow: auto;
   }
   
-  .position-relative {
-    position: relative;
-  }
-  
   .pointer {
     cursor: pointer;
-  }
-  
-  .container {
-    padding: 0 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    @include breakpoint-up(medium) {
-      max-width: 45rem;
-    }
-  
-    @include breakpoint-up(large) {
-      max-width: 60rem;
-    }
-  
-    @include breakpoint-up(xlarge) {
-      max-width: 71.25rem;
-    }
   }
   
   @keyframes checkAnimation {
@@ -694,14 +713,8 @@ header {
   }
   
   header {
-    padding: 0.8rem 0;
-   
+    padding: 0.9rem 0;
     background-color: $redColor;
-  
-    @include breakpoint-up(medium) {
-      & {
-        padding: 0.8rem 1rem;
-      }
     }
   
     nav {
@@ -780,24 +793,170 @@ header {
       a {
         display: block;
         font-size: 14px;
-        padding: 0.5rem;
         transition: color ease-in-out 400ms;
         color: lighten($white, 5%);
-  
         &:hover,
         &:focus {
           color: $primaryColor;
         }
+
       }
-  
+      .dropdown-menu{
+        li{
+          margin: 0;
+        }
+        a{
+        color: black;
+       }
+
+      }
+      .dropdown{
+        &:hover,&:focus{
+          .dropdown-menu{
+            display: block;
+          }
+        }
+      }
       @include breakpoint-up(medium) {
         & li {
-          margin-left: 1rem;
+          // margin-left: 1rem;
         }
+      }
+    }
+  
+
+    .page-section {
+      position: relative;
+      padding: 100px 15px;
+      background: #000 url('../img/aboutus.jpg') no-repeat center / cover;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
+      }
+
+      @media only screen and (min-width: 768px) {
+        & {
+          background-attachment: fixed;
+        }
+        
+      }
+
+    a {
+      color: #fff;
+      font-size: 1.125rem;
+    }
+    .breadcrumb-item.active {
+      color: #fff;
+      font-size: 1.125rem;
+    }
+    .breadcrumb-item+.breadcrumb-item {
+      &::before {
+        color: #fff;
+      }
+    }
+  }
+  .page-name {
+    color: #fff;
+  }
+  .section-header {
+    h1 {
+      span {
+        color: #00aeef;
+      }
+    }
+  }
+  .promotions-fluid {
+    padding: 30px 15px;
+    background: #181818;
+
+    @media only screen and (min-width: 992px) {
+      & {
+        padding: 40px 15px;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+      & .promotion-box:not(:last-child) {
+        margin-bottom: 2rem
       }
     }
   }
   
+  .promotion-box {
+    color: #fff;
+    padding: 17px;
+    p {
+      margin: 0;
+    }
+  }
+  .promotions-heading {
+    color: #fff;
+    span {
+      color: #00aeef;
+    }
+  }
+  form {
+    .form-control {
+      border-radius: 4px;
+      height: 50px;
+      border-color: #ced4da;
+      padding: 6px 20px;
+      margin-bottom: 30px;
+    }
+    textarea.form-control {
+      height: auto;
+      padding: 1rem;
+    }
+    .btn-primary {
+      height: 50px;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 15px;
+      border: 1px solid #00aeef;
+      background: #00aeef;
+      &:hover {
+        color: #00aeef;
+        border-color: #00aeef;
+        background: transparent;
+      }
+    }
+  }
+  .google-map {
+    position: relative;
+    padding-bottom: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .page-section {
+      background-attachment: fixed;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .promotions-fluid {
+      padding: 40px 15px;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .promotions-fluid {
+      .promotion-box {
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  } 
+    
   .main-heading {
     font-size: 1.3rem;
     color: $primaryColor;
@@ -902,7 +1061,6 @@ header {
   .personalinfo-wrapper {
     padding: 2rem;
     border-radius: 5px;
-    background: aliceblue;
   }
   
   .personalinfo-heading {
@@ -928,7 +1086,10 @@ header {
       display: inline-block;
     }
   }
-  
+  .sub-heading{
+    color: #00aeef;
+    font-weight: bold;
+  }
   .btn-submit {
     display: block;
     margin-left: auto;
@@ -944,4 +1105,59 @@ header {
       background-color: lighten($primaryColor, 0);
     }
   }
+  ul.arrow {
+    font-size: 18px;
+	line-height: 1.5em;
+	margin: 5px 0 15px;
+	padding: 0;
+    li {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 20px;
+    
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 5px;
+        height: 5px;
+        background-color:black;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+      }
+    }
+  }
+  @media only screen and (min-width:768px){
+    .banner-text-container{
+      color: $white;
+      position: absolute;
+      top: 0;
+      left:0;
+    }
+    .banner-text{
+      padding: 20% 0 0;
+    }
+  }
   
+  .healthcare-tabs {
+    overflow-y: auto;
+    flex-wrap: nowrap;
+    li {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  button.nav-link{
+    color: #fff;
+    border-radius: 0;
+    border: 0;
+    background-color: #999;
+
+    &.active {
+      color: #fff;
+      background-color: $primaryColor;
+    }
+  }
+  }
+}
