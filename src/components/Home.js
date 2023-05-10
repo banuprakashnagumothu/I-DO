@@ -29,9 +29,9 @@ import { Carousel } from 'react-responsive-carousel';
             <div className="container-fluid banner-text-container">
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 col-lg-7">
+                            <div className="col-12 col-lg-12 text-center">
                                 <div className="banner-text">
-                                    <h3>
+                                    <h3 className='pb-2'>
                                         Your contribution <span>can help achieve a solution</span>
                                     </h3>
                                     {/* <p>
@@ -56,7 +56,7 @@ import { Carousel } from 'react-responsive-carousel';
                 <div className="container">
                     <div className="section-header col-lg-7">
                         <h1>
-                            Who We Are
+                        Vision and Mission
                         </h1>
                         <p className="sub-title title-before"> We work with an objective of providing universal, affordable & comprehensive primary health care to the most underserved and marginalized population in remote tribal/ hilly and /or insurgency areas.
                         </p>
