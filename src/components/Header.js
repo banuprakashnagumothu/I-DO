@@ -63,9 +63,9 @@ function Header() {
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="javascript:void(0);" className="nav-link">
+                                    <NavLink to={'/contact'} className="nav-link" exact>
                                         Contact
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink className="nav-link" activeClassName="active" exact to={'/our-partners'}>Our partners</NavLink>

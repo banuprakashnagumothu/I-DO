@@ -20,6 +20,7 @@ import MotherChildHealthCare from './components/Services/MotherChildHealthCare';
 import HealthCare from './components/Services/HealthCare';
 import Reports from './components/Reports';
 import OurTeam from './components/OurTeam';
+import Contact from './components/Contact';
 function App() {
   return (
      <Router basename={process.env.PUBLIC_URL}>
@@ -72,6 +73,9 @@ function App() {
      </Route>
      <Route path='/our-team' exact>
        <OurTeam/>
+     </Route>
+     <Route path='/contact' exact>
+       <Contact/>
      </Route>
    </Router>
 

@@ -15,7 +15,7 @@ function OurTeam() {
                         </ol>
                     </nav>
                     <h1 className="page-name">
-                        Our Team
+                    LIST OF BOARD MEMBERS
                     </h1>
                 </div>
             </section>
@@ -27,7 +27,7 @@ function OurTeam() {
                                 <div className="team-wrapper">
                                     <div className="team-item">
                                         <div className="team-img">
-                                            <img className='team-img-src' src={process.env.PUBLIC_URL + "/assets/img/team/RavindraRao.JPG"} />
+                                            <img className='team-img-src' src={process.env.PUBLIC_URL + "/assets/img/team/RavindraRao.jpg"} />
                                         </div>
                                         <h2>Dr N Ravindra Rao</h2>
                                         <span>President</span>
