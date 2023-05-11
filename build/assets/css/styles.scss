@@ -118,7 +118,7 @@ header {
     position: relative;
     z-index: 1;
     background: #999 url('../img/banner-bg.jpg') no-repeat center / cover;
-    height: 380px;
+    height: 480px;
     &::before {
         position: absolute;
         content: '';
@@ -482,6 +482,7 @@ header {
     padding-right: 15px;
 
     .team-item {
+      width : 174px;
         & .team-img {
             position: relative;
             margin-bottom: 25px;

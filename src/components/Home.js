@@ -126,25 +126,6 @@ function Home() {
                                     </div>
                                 </NavLink>
                             </div>
-                            {/* <div className="col-md-4 col-lg-4 col-12 mt-3">
-                            <NavLink to={'/services/wash'}>
-
-                             <div className="services-inner wash">
-                                <div className="mb-2"><img src='/assets/img/wash.png'/></div>
-                                <h4>Wash</h4>
-                            </div>
-                            </NavLink>
-                            </div> */}
-
-                            <div className="col-md-4 col-lg-4 col-12 mt-3">
-                                <NavLink to={'/services/sustainable-health'}>
-
-                                    <div className="services-inner sustainable-health">
-                                        <div className="mb-2"><img src='/assets/img/sustainable-health-ico.png' /></div>
-                                        <h4>Sustainable Health</h4>
-                                    </div>
-                                </NavLink>
-                            </div>
                         </div>
                     </div>
                 </div>
