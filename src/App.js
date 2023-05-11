@@ -18,6 +18,8 @@ import SustainableHealth from './components/Services/SustainableHealth';
 import OurPartners from './components/OurPartners';
 import MotherChildHealthCare from './components/Services/MotherChildHealthCare';
 import HealthCare from './components/Services/HealthCare';
+import Reports from './components/Reports';
+import OurTeam from './components/OurTeam';
 function App() {
   return (
      <Router basename={process.env.PUBLIC_URL}>
@@ -64,6 +66,12 @@ function App() {
      </Route>
      <Route path='/about' exact>
        <About/>
+     </Route>
+     <Route path='/reports' exact>
+       <Reports/>
+     </Route>
+     <Route path='/our-team' exact>
+       <OurTeam/>
      </Route>
    </Router>
 
