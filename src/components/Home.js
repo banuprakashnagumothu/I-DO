@@ -173,6 +173,30 @@ function Home() {
                 </div>
             </section>
 
+            <section>
+            <div className="container">
+                <div className='row mt-3 mb-3'>
+                    <div className='col-12 text-center'>
+                        <div className="banner-text">
+                            <h3>
+                                Your contribution <span>can help achieve a solution</span>
+                            </h3>
+                            <NavLink to={process.env.PUBLIC_URL + '/become-a-volunteer'} activeClassName="active">
+                                <button className="btn banner_actionbtn">
+                                Become a volunteer
+                                </button>
+                            </NavLink>
+                            <NavLink to={process.env.PUBLIC_URL + '/donate'} activeClassName="active">
+                                <button className="btn banner_actionbtn">
+                                    Donate Now
+                                </button>
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
         </React.Fragment>
     )
 }

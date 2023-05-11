@@ -89,38 +89,82 @@ function OurPartners() {
                                     </div>
                                     <div className="team-item partner-item">
                                         <div className="team-img">
-                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/partner-icon.png"} />
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/Karuna_Trust.jpg"} />
                                         </div>
-                                        <h2>Dr Shirin Pinto (USA)</h2>
+                                        <h2><a href='https://www.karunatrust.org/' target='_blank'> Karuna Trust</a></h2>
                                         <span><i class="fa fa-globe" aria-hidden="true"></i> <a href='' target='_blank'></a></span>
+                                    </div>
+                                    <div className="team-item partner-item">
+                                        <div className="team-img">
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/Netcracker.png"} />
+                                        </div>
+                                        <h2><a href='https://www.netcracker.com/' target='_blank'> Netcracker Technology Solutions Pvt Ltd</a></h2>
+                                    </div>
+                                    <div className="team-item partner-item">
+                                        <div className="team-img">
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/Nisvartha.png"} />
+                                        </div>
+                                        <h2><a href='https://www.nisvartha.org/' target='_blank'>Nisvartha Foundation</a></h2>
+                                    </div>
+                                    <div className="team-item partner-item">
+                                        <div className="team-img">
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/Pragathi.png"} />
+                                        </div>
+                                        <h2><a href='https://www.globalpragathi.com/' target='_blank'>Pragati welfare society</a></h2>
+                                    </div>
+                                    <div className="team-item partner-item">
+                                        <div className="team-img">
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/Qvantel.png"} />
+                                        </div>
+                                        <h2>Qvantel Software Solution Ltd</h2>
+                                    </div>
+                                    <div className="team-item partner-item">
+                                        <div className="team-img">
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/Robinhood_Army.png"} />
+                                        </div>
+                                        <h2> <a href='https://robinhoodarmy.com/' target='_blank'>Robin Hood Army Hyderabad</a></h2>
+                                    </div>
+                                    <div className="team-item partner-item">
+                                        <div className="team-img">
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/Rural_Hope_Foundation.png"} />
+                                        </div>
+                                        <h2><a href='https://ruralhopefoundation.org/' target='_blank'>Rural Hope Foundation(USA)</a></h2>
+                                    </div>
+                                    <div className="team-item partner-item">
+                                        <div className="team-img">
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/Samaritan_ForTheNation.jpeg"} />
+                                        </div>
+                                        <h2>Samaritans - For the Nation</h2>
                                     </div>
                                     <div className="team-item partner-item">
                                         <div className="team-img">
                                             <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/partner-icon.png"} />
                                         </div>
-                                        <h2>Dr Shirin Pinto (USA)</h2>
-                                        <span><i class="fa fa-globe" aria-hidden="true"></i> <a href='' target='_blank'></a></span>
+                                        <h2>Save the Child Foundation</h2>
                                     </div>
                                     <div className="team-item partner-item">
                                         <div className="team-img">
                                             <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/partner-icon.png"} />
                                         </div>
-                                        <h2>Dr Shirin Pinto (USA)</h2>
-                                        <span><i class="fa fa-globe" aria-hidden="true"></i> <a href='' target='_blank'></a></span>
+                                        <h2>Street NGO</h2>
                                     </div>
                                     <div className="team-item partner-item">
                                         <div className="team-img">
-                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/partner-icon.png"} />
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/TechieRide.png"} />
                                         </div>
-                                        <h2>Dr Shirin Pinto (USA)</h2>
-                                        <span><i class="fa fa-globe" aria-hidden="true"></i> <a href='' target='_blank'></a></span>
+                                        <h2>TechieRide</h2>
                                     </div>
                                     <div className="team-item partner-item">
                                         <div className="team-img">
-                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/partner-icon.png"} />
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/TNR_Trust.jpeg"} />
                                         </div>
-                                        <h2>Dr Shirin Pinto (USA)</h2>
-                                        <span><i class="fa fa-globe" aria-hidden="true"></i> <a href='' target='_blank'></a></span>
+                                        <h2><a href='https://tnrtrust.org/' target='_blank'>TNR Trust</a></h2>
+                                    </div>
+                                    <div className="team-item partner-item">
+                                        <div className="team-img">
+                                            <img className='team-img-src partner-img-src' src={process.env.PUBLIC_URL + "/assets/img/partners/UnitedCareDevelopmentService.png"} />
+                                        </div>
+                                        <h2><a href='https://yousee.one/' target='_blank'>United care development services ( Panjagutta)</a></h2>
                                     </div>
                                 </div>
                             </div>

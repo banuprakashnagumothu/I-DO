@@ -21,6 +21,7 @@ import HealthCare from './components/Services/HealthCare';
 import Reports from './components/Reports';
 import OurTeam from './components/OurTeam';
 import Contact from './components/Contact';
+import BecomeAVolunteer from './components/BecomeAVolunteer';
 function App() {
   return (
      <Router basename={process.env.PUBLIC_URL}>
@@ -76,6 +77,9 @@ function App() {
      </Route>
      <Route path='/contact' exact>
        <Contact/>
+     </Route>
+     <Route path='/become-a-volunteer' exact>
+       <BecomeAVolunteer/>
      </Route>
    </Router>
 
