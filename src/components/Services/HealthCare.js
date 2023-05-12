@@ -137,6 +137,102 @@ function HealthCare() {
                                         <img src="../../assets/img/healthcaremchkit/2.jpg" className="img-thumbnail rounded nutri-img w-100" />
                                     </div>
                                 </div>
+                                <div className="row align-items-center mt-4 mb-4">
+                                    <div className="col-lg-6">
+                                        <h4>Health services provided at IDO Health Clinic</h4>
+                                        <table className='table table-bordered'>
+                                            <tr>
+                                                <td className='fw-bold'>Total Patients</td>
+                                                <td>5782</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>Antenatal Checkups</td>
+                                                <td>254</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>Infant Care</td>
+                                                <td>147</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>Blood Investigations</td>
+                                                <td>1398</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>Critical Patients Admitted to higher centers</td>
+                                                <td>73</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div className="row align-items-center mt-4 mb-4">
+                                    <div className="col-lg-6">
+                                        <h4>Health services provided in tribal habitations by Community Health Workers</h4>
+                                        <table className='table table-bordered'>
+                                            <tr>
+                                                <td className='fw-bold'>INSTITUTIONAL DELIVERIES </td>
+                                                <td>52</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>% of Institutional deliveries</td>
+                                                <td>27.89% in 2021  <br />
+                                                    47.72% in 2022
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>SAFE HOME DELIVERIES</td>
+                                                <td>27</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>Total number of Infant deaths</td>
+                                                <td>32 in 2021 <br />
+                                                    21 in 2022</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div className="row align-items-center mt-4 mb-4">
+                                    <div className="col-lg-6">
+                                        services that has been actively provided by <span className='fw-bold'>Mobile Medical Unit</span> team in the 28 tribal
+                                        habitations in the year 2022
+
+                                        <table className='table table-bordered'>
+                                            <tr>
+                                                <td className='fw-bold'>Total Patients</td>
+                                                <td>4107</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>ANTENATAL CHECKUPS(ANC- I, II & III
+                                                    Trimesters)
+                                                </td>
+                                                <td>556
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>HIGH RISK PREGNANCIES IDENTIFIED
+                                                    and TREATED</td>
+                                                <td>98</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>ANEMIA- SCREENING </td>
+                                                <td>582</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>TUBERCULOSIS POSITIVE </td>
+                                                <td>21</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>CRITICAL PATIENTS ADMITTED TO
+                                                    HIGHER CENTERS
+                                                </td>
+                                                <td>32</td>
+                                            </tr>
+                                            <tr>
+                                                <td className='fw-bold'>TOTAL DEWORMING (Twice/year)</td>
+                                                <td>1224</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
