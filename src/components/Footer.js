@@ -37,46 +37,12 @@ function Footer(){
                             <h3 className="mb-4">
                                 Where Find Us
                             </h3>
-                            <div className="col-lg-6 p-0">
-                                <p class="sub-title title-before">
-                                </p>
-                            </div>
                         </div>
                         <div className="row">
-                            <div className="col-lg-6 mb-4 mb-lg-0">
-                                <form action="#" class="">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="formUsername">
-                                                    Enter Name
-                                                </label>
-                                                <input class="form-control" id="formUsername" name="name" type="text" value="" size="30" aria-required="true" required="required" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="formUseremail">
-                                                    Enter email
-                                                </label>
-                                                <input class="form-control" id="formUseremail" name="email" type="text" value="" size="30" aria-required="true" required="required" />
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <div class="form-group">
-                                                <label for="formUsermessage">
-                                                    Enter message
-                                                </label>
-                                                <textarea name="message" id="formUsermessage" class="form-control" required="required" rows="5"></textarea>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-12">
-                                            <input type="submit" class="btn btn-primary" value="Submit your message" />
-                                        </div>
-                                    </div>
-                                </form>
+                            <div className="col-lg-7 col-12 mb-4 mb-lg-0">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWddwgyUO_YFzVwBTao7pQagC00Ozpx6xu7eVL52DBEbsKOw/viewform?embedded=true" width="800" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-5 col-12">
                                 <div className="google-map">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121747.08880799056!2d80.54482945333221!3d17.52676350609263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3410a556a5bd1d%3A0x9716a9866e772f09!2sKothagudem%2C%20Telangana!5e0!3m2!1sen!2sin!4v1622902483460!5m2!1sen!2sin"  allowfullscreen="" loading="lazy"></iframe>
                                 </div>

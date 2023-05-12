@@ -79,6 +79,12 @@ function Header() {
                                 <li className="nav-item">
                                     <NavLink className="nav-link" activeClassName="active" exact to={'/our-team'}>Our team</NavLink>
                                 </li>
+                                <li className="d-none d-md-inline-flex">
+                                    <NavLink to={process.env.PUBLIC_URL + '/become-a-volunteer'} activeClassName="active">   <button className="btn header__btndonate">
+                                    Become a Volunteer
+                                    </button>
+                                    </NavLink>
+                                </li>
                             </ul>
                         </div>
                     </nav>

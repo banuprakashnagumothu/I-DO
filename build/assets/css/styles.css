@@ -161,7 +161,7 @@ header .header__btndonate:hover::before {
   position: relative;
   z-index: 1;
   background: #999 url("../img/banner-bg.jpg") no-repeat center/cover;
-  height: 380px;
+  height: 480px;
 }
 
 .banner::before {

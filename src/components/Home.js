@@ -16,7 +16,7 @@ function Home() {
                     </div>
                     <div className="banner" style={{ background: "#999 url('/assets/img/banner/3.jpg') no-repeat center / cover" }}>
                     </div>
-                    <div className="banner" style={{ background: "#999 url('/assets/img/banner/4.jpg') no-repeat center / cover" }}>
+                    <div className="banner" style={{ background: "#999 url('/assets/img/all-members.png') no-repeat center / cover" }}>
                     </div>
                     <div className="banner" style={{ background: "#999 url('/assets/img/banner/5.jpg') no-repeat center / cover" }}>
                     </div>
@@ -27,13 +27,13 @@ function Home() {
 
                 </Carousel>
             </section>
-            <section className="section" id="about">
+            <section className="" id="about">
                 <div className="container">
                     <div className="section-header col-lg-8">
                         <h1>
                             Vision and Mission
                         </h1>
-                        <p className="sub-title title-before"> Vision: the vision of I-do is to reach the hitherto unreached tribal population and provide them
+                        <p className="sub-title title-before"> Vision: the vision of I-DO is to reach the hitherto unreached tribal population and provide them
                             with essential health and nutrition services to lead a healthy life
                         </p>
                         <p className="sub-title title-before"> Mission
@@ -98,17 +98,17 @@ function Home() {
                             </div>
                         </div> */}
                         <div className='row text-center'>
-                            <div className="col-md-4 col-lg-4 col-12 mt-3">
-                                <NavLink to={'/services/primary-health-care'}>
+                            <div className="col-md-3 col-lg-3 col-12 mt-3">
+                                <NavLink to={'/services/health-care'}>
 
                                     <div className="services-inner primary-health-care">
                                         <div className="mb-2"><img src='/assets/img/primary-health-care-ico.png' /></div>
-                                        <h4>Primary Health Care</h4>
+                                        <h4>Health Care</h4>
                                     </div>
                                 </NavLink>
 
                             </div>
-                            <div className="col-md-4 col-lg-4 col-12 mt-3">
+                            <div className="col-md-3 col-lg-3 col-12 mt-3">
                                 <NavLink to={'/services/nutrition'}>
 
                                     <div className="services-inner nutrition">
@@ -117,12 +117,21 @@ function Home() {
                                     </div>
                                 </NavLink>
                             </div>
-                            <div className="col-md-4 col-lg-4 col-12 mt-3">
+                            <div className="col-md-3 col-lg-3 col-12 mt-3">
                                 <NavLink to={'/services/education'}>
 
                                     <div className="services-inner education">
                                         <div className="mb-2"><img src='/assets/img/education-ico.png' /></div>
                                         <h4>Education</h4>
+                                    </div>
+                                </NavLink>
+                            </div>
+                            <div className="col-md-3 col-lg-3 col-12 mt-3">
+                                <NavLink to={'/services/other-initiatives'}>
+
+                                    <div className="services-inner sustainable-health">
+                                        <div className="mb-2"><img src='/assets/img/sustainable-health-ico.png' /></div>
+                                        <h4>Other Initiatives</h4>
                                     </div>
                                 </NavLink>
                             </div>
@@ -154,7 +163,7 @@ function Home() {
                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
                             <Ticker className="service-count" end={14} />
                             <div className="service-count-name">
-                                Bridge School </div>
+                                Bridge Schools </div>
                         </div>
                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
                             <Ticker className="service-count" end={432} />
