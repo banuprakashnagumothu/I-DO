@@ -67,7 +67,7 @@ function Nutrition() {
                                 </p>
                             </div>
                             <div className='col-6'>
-                                <img src="../../assets/img/nutrition/2.jpg" width='100%' height='100px' className="img-thumbnail rounded nutri-img" />
+                                <img src="../../assets/img/nutrition/2.jpeg" width='100%' height='100px' className="img-thumbnail rounded nutri-img" />
                             </div>
                         </div>
                         <div className='row'>

@@ -161,7 +161,13 @@ header .header__btndonate:hover::before {
   position: relative;
   z-index: 1;
   background: #999 url("../img/banner-bg.jpg") no-repeat center/cover;
-  height: 480px;
+  height: 550px;
+  background-size: auto 100% !important;
+  background-color: transparent !important;
+}
+
+.slide{
+  background: url("../img/fr-bg.jpg") no-repeat center/cover;;
 }
 
 .banner::before {
@@ -508,9 +514,19 @@ header .header__btndonate:hover::before {
   margin: 25px;
 }
 
+.team-wrapper .partner-item
+{
+  flex: 0 1 300px;
+  margin: 5px;
+}
+
 .team-img-src {
   width: 100%;
   height: 249px;
+}
+
+.partner-img-src{
+  border: 1px solid #761540;
 }
 
 .team-wrapper .team-item .team-social {
@@ -591,6 +607,10 @@ header .header__btndonate:hover::before {
 
 .team-wrapper .team-item:hover .team-social li {
   right: 30px;
+}
+
+.team-item span{
+  display: inline-block;
 }
 
 .ai-center {
@@ -1305,6 +1325,11 @@ ul.arrow li::before {
 .healthcare-tabs li button.nav-link.active {
   color: #fff;
   background-color: #014df9;
+}
+
+.nutri-img
+{
+  height: 400px;
 }
 
 /*# sourceMappingURL=styles.css.map */

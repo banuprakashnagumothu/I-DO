@@ -28,6 +28,18 @@ function HealthCare() {
                 <section className="container-fluid py-5 bg-white">
                     <div className='container'>
                         <div className='col-12'>
+                            <p className='fw-bold'>Tribal communities and health situation:</p>
+                            <ul className='arrow'>
+                                <li>8.6% of the total population are Scheduled Tribal(ST) communities</li>
+                                <li>40.6% of ST population below the poverty line as against 20.5% of the non- tribal population </li>
+                                <li>IMR of ST population was 44.4 </li>
+                                <li>65% of tribal women in the age of 15-49 years group are anemic </li>
+                                <li>50% of the total deaths from Malaria are from Tribal communities  </li>
+                                <li>Tuberculosis prevalence in Tribal communities is 703 against 246(general population)  per 100,000 </li>
+                                <li>The rate of institutional delivery among the tribal women is the lowest( 70.1%)</li>
+                            </ul>
+                        </div>
+                        <div className='col-12'>
                             <ul>
                                 <li>
                                     TOTAL PATIENTS TREATED = 45000

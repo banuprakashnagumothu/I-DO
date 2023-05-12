@@ -188,10 +188,8 @@ function Home() {
                             <h3>Stories of Change</h3>
                             <ol>
                                 <li>
-                                    <span className='fw-bold'>How we achieved zero Maternal deaths ?</span>
-                                    <p>  In 2021, there were 3 maternal deaths out of 250+ pregnancies in the 43 tribal habitations. In
-                                        2022, there were 295 pregnant women from 51 tribal habitations. Fortunately no maternal
-                                        deaths occurred in 2022. This was made possible through the following steps:</p>
+                                    <span className='fw-bold'>How we achieved Zero maternal Deaths?</span>
+                                    <p> In 2021, there were 3 maternal deaths out of 151 live births in the 43 tribal habitations. In 2022, there were 192 live births from 51 tribal habitations.</p>
                                     <ol>
                                         <li>
                                             Identifying the local youth from each tribal habitation who are willing to volunteer for their
@@ -211,11 +209,57 @@ function Home() {
                                     </ol>
                                 </li>
                                 <li><span className='fw-bold'>IMPACT OF NUTRITION PROGRAM</span>
-                                    <p>This also reflects the need of NUTRITION POWDER and COMMUNITY HEALTH WORKERS
-                                        in the interior tribal habitations to save the lives of severe acute malnutrition (SAM) babies.</p>
+
+                                    <div className='row align-items-center mt-2 mb-2'>
+                                        <div className='col-6'>
+                                            <p>This also reflects the need of NUTRITION POWDER and COMMUNITY HEALTH WORKERS
+                                                in the interior tribal habitations to save the lives of severe acute malnutrition (SAM) babies.</p>
+                                        </div>
+                                        <div className='col-6'>
+                                            <img src="../../assets/img/storiesofchangefinal/1.jpg" className="img-thumbnail rounded nutri-img" />
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <span className='fw-bold'>CASE OF SEVERE ANEMIA.</span>
+                                    <div className='row'>
+                                        <div className='col-6'>
+                                            <p>HB: 5.1 grams/dL <br />
+                                                “MOBILE MEDICAL UNIT”<br />
+                                                REACHING THE INTERIOR TRIBAL HABITATIONS DATE:</p>
+                                            <p>
+                                                21-01-2022 RAVVA GANGA <br />
+                                                AGE: 16 Years <br />
+                                                HABITATION: Bendalpad.
+                                            </p>
+                                            <ul>
+                                                <li>40 KMS from kothagudem government hospital.</li>
+                                                <li>Our MOBILE MEDICAL UNIT TEAM identified the patient with severe anaemia & fever since
+                                                    15 days.</li>
+                                                <li>Admitted to GOVT hospital & blood transfusion done twice. Thankful to the blood donors for
+                                                    coming forward & responding immediately.</li>
+                                            </ul>
+                                        </div>
+                                        <div className='col-6'>
+                                            <span className='fw-bold'>ANEMIA CASE 2:</span>
+                                            <p>
+                                                Patient name - Madhavi Samakka <br />
+                                                Tribal habitation -Sirthanpadu <br />
+                                                HB :1 gram/dl diagnosed through our medical kits <br />
+                                                She was a victim of black magic . <br />
+                                                She was counselled and admitted into government hospital at Bhadrachalam <br />
+                                                But she fled from the hospital . <br />
+                                                Finally she was counselled and 2 units of blood transfusion was done and supplements were <br />
+                                                provided for her recovery
+
+                                            </p>
+                                            <p>
+                                                <span className='fw-bold'>IMPACT</span> - Her HB has now improved to 11.9 grams/dl <br />
+                                                Happy to mension that today she works as a “community health worker” <br />
+                                                Serving the needy at her habitation <br />
+                                            </p>
+                                        </div>
+                                    </div>
                                 </li>
                             </ol>
                         </div>
@@ -225,9 +269,9 @@ function Home() {
 
             <section className="sectionservices-count-list">
                 <div className="container">
-                    <div className='row mt-3 mb-3'>
+                    <div className='row mt-3 mb-3 align-items-center'>
                         <h2>Volunteering</h2>
-                        <div className='col-12'>
+                        <div className='col-12 col-lg-8'>
                             <h4>Construction Work</h4>
                             <p>Inspired by the efforts put in by the organisation IDO to improve peoples health, the indigenous
                                 community of Kranti Nagar volunteered to work for the I-DO Health Centre. The community had
@@ -237,8 +281,21 @@ function Home() {
                                 location and the services it is providing, it has become a boon for the local community .
                             </p>
                         </div>
-                        <div className='col-12'>
-                            <h4>Health Work</h4>
+                        <div className='col-12 col-lg-4 text-right'>
+                        <img src="../../assets/img/fwdvolunteeringinternship/1.jpg" className="img-thumbnail rounded nutri-img" />
+                        </div>
+                    </div>
+                    <div className='row mb-3 align-items-center'>
+                        <div className='col-6'>
+                        <img src="../../assets/img/fwdvolunteeringinternship/2.jpg" className="img-thumbnail rounded nutri-img" />
+                        </div>
+                        <div className='col-6'>
+                        <img src="../../assets/img/fwdvolunteeringinternship/3.jpg" className="img-thumbnail rounded nutri-img" />
+                        </div>
+                    </div>
+                    <div className='row'>
+                    <h4>Health Work</h4>
+                    <div className='col-12'>
                             <p>This indigenous community was home to lot of preventable deaths. This regular suffering
                                 experienced created a desperation among the community to work towards betterment of their
                                 healthcare. Seeing an opportunity in I-DO, many people have undergone training to provide
@@ -249,15 +306,12 @@ function Home() {
 
                             </p>
                         </div>
-                        <div className='col-12'>
-                            <h4>Construction Work</h4>
-                            <p>Inspired by the efforts put in by the organisation IDO to improve peoples health, the indigenous
-                                community of Kranti Nagar volunteered to work for the I-DO Health Centre. The community had
-                                sacrificed their daily wage labour to build a health facility for themselves. More than 6231 people
-                                volunteered for the facility. This has reduced the overall construction cost of the building by
-                                significant margin. In this way they own it .With a functional health facility now at the remotest
-                                location and the services it is providing, it has become a boon for the local community .
-                            </p>
+                        <div className='col-6'>
+                        <img src="../../assets/img/fwdvolunteeringinternship/4.jpg" className="img-thumbnail rounded nutri-img" />
+
+                        </div>
+                        <div className='col-6'>
+                        <img src="../../assets/img/fwdvolunteeringinternship/5.jpg" className="img-thumbnail rounded nutri-img" />
                         </div>
                     </div>
                 </div>

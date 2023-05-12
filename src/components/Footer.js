@@ -35,7 +35,7 @@ function Footer(){
                     <div className="container">
                         <div className="mb-5">
                             <h3 className="mb-4">
-                                Where Find Us
+                               Leave a Message
                             </h3>
                         </div>
                         <div className="row">
@@ -44,7 +44,7 @@ function Footer(){
                             </div>
                             <div className="col-lg-5 col-12">
                                 <div className="google-map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121747.08880799056!2d80.54482945333221!3d17.52676350609263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3410a556a5bd1d%3A0x9716a9866e772f09!2sKothagudem%2C%20Telangana!5e0!3m2!1sen!2sin!4v1622902483460!5m2!1sen!2sin"  allowfullscreen="" loading="lazy"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15208.485095363052!2d80.6352853!3d17.6444143!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3405e42e3b7def%3A0xc73f93f5275de6a7!2sIDO%20Health%20Centre!5e0!3m2!1sen!2sin!4v1683893344728!5m2!1sen!2sin" width="600" height="650"   loading="lazy"></iframe>
                                 </div>
                             </div>
                         </div>
