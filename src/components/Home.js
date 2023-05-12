@@ -172,28 +172,112 @@ function Home() {
                     </div>
                 </div>
             </section>
-
             <section>
-            <div className="container">
-                <div className='row mt-3 mb-3'>
-                    <div className='col-12 text-center'>
-                        <div className="banner-text">
-                            <h3>
-                                Your contribution <span>can help achieve a solution</span>
-                            </h3>
-                            <NavLink to={process.env.PUBLIC_URL + '/become-a-volunteer'} activeClassName="active">
-                                <button className="btn banner_actionbtn">
-                                Become a volunteer
-                                </button>
-                            </NavLink>
-                            <NavLink to={process.env.PUBLIC_URL + '/donate'} activeClassName="active">
-                                <button className="btn banner_actionbtn">
-                                    Donate Now
-                                </button>
-                            </NavLink>
+                <div className="container">
+                    <div className='row mt-3 mb-3'>
+                        <div className='col-12'>
+                            <h3>Stories of Change</h3>
+                            <ol>
+                                <li>
+                                    <span className='fw-bold'>How we achieved zero Maternal deaths ?</span>
+                                    <p>  In 2021, there were 3 maternal deaths out of 250+ pregnancies in the 43 tribal habitations. In
+                                        2022, there were 295 pregnant women from 51 tribal habitations. Fortunately no maternal
+                                        deaths occurred in 2022. This was made possible through the following steps:</p>
+                                    <ol>
+                                        <li>
+                                            Identifying the local youth from each tribal habitation who are willing to volunteer for their
+                                            community. These community health workers are trained on various maternal & child
+                                            health aspects .
+                                        </li>
+                                        <li>These trained health workers are now equipped to identify & treat the sick individuals at
+                                            their door-step within the habitation, making health services accessible to everyone.</li>
+                                        <li>Iron-sucrose infusion done at door-step for several anemic pregnant women</li>
+                                        <li>Monthly Seemantham Program (Baby Shower Event) conducted in the premises of IDO
+                                            Health Centre .In this process, we conduct a 1 hour health education session & also do
+                                            complete antenatal checkup of all the pregnant women at our health centre,</li>
+                                        <li>
+                                            High-risk pregnancies are identified and necessary intervention is planned accordingly.
+                                            Early diagnosis & timely treatment are always the key to good health
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li><span className='fw-bold'>IMPACT OF NUTRITION PROGRAM</span>
+                                    <p>This also reflects the need of NUTRITION POWDER and COMMUNITY HEALTH WORKERS
+                                        in the interior tribal habitations to save the lives of severe acute malnutrition (SAM) babies.</p>
+                                </li>
+                                <li>
+                                    <span className='fw-bold'>CASE OF SEVERE ANEMIA.</span>
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className="sectionservices-count-list">
+                <div className="container">
+                    <div className='row mt-3 mb-3'>
+                        <h2>Volunteering</h2>
+                        <div className='col-12'>
+                            <h4>Construction Work</h4>
+                            <p>Inspired by the efforts put in by the organisation IDO to improve peoples health, the indigenous
+                                community of Kranti Nagar volunteered to work for the I-DO Health Centre. The community had
+                                sacrificed their daily wage labour to build a health facility for themselves. More than 6231 people
+                                volunteered for the facility. This has reduced the overall construction cost of the building by
+                                significant margin. In this way they own it .With a functional health facility now at the remotest
+                                location and the services it is providing, it has become a boon for the local community .
+                            </p>
+                        </div>
+                        <div className='col-12'>
+                            <h4>Health Work</h4>
+                            <p>This indigenous community was home to lot of preventable deaths. This regular suffering
+                                experienced created a desperation among the community to work towards betterment of their
+                                healthcare. Seeing an opportunity in I-DO, many people have undergone training to provide
+                                basic health services at hamlet level. There are instances where emergency deliveries were
+                                also conducted by the trained community health workers. They played the role of barefoot
+                                doctors. By acting as a point of contact between the organisation and the indigenous people,
+                                the community Health Workers form a strong foundation for I-DO.
+
+                            </p>
+                        </div>
+                        <div className='col-12'>
+                            <h4>Construction Work</h4>
+                            <p>Inspired by the efforts put in by the organisation IDO to improve peoples health, the indigenous
+                                community of Kranti Nagar volunteered to work for the I-DO Health Centre. The community had
+                                sacrificed their daily wage labour to build a health facility for themselves. More than 6231 people
+                                volunteered for the facility. This has reduced the overall construction cost of the building by
+                                significant margin. In this way they own it .With a functional health facility now at the remotest
+                                location and the services it is providing, it has become a boon for the local community .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <section>
+                <div className="container">
+                    <div className='row mt-3 mb-3'>
+                        <div className='col-12 text-center'>
+                            <div className="banner-text">
+                                <h3>
+                                    <p>Your contribution <span className='fw-bold'>can help achieve a solution</span></p>
+                                </h3>
+                                <NavLink to={process.env.PUBLIC_URL + '/become-a-volunteer'} activeClassName="active">
+                                    <button className="btn banner_actionbtn">
+                                        Become a volunteer
+                                    </button>
+                                </NavLink>
+                                <NavLink to={process.env.PUBLIC_URL + '/donate'} activeClassName="active">
+                                    <button className="btn banner_actionbtn">
+                                        Donate Now
+                                    </button>
+                                </NavLink>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 

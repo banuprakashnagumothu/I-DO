@@ -56,7 +56,7 @@ function Header() {
 
                                             <li><NavLink className="dropdown-item" to={'/services/nutrition'}>Nutrition</NavLink></li>
                                             <li><NavLink className="dropdown-item" to={'/services/education'}>Education</NavLink></li>
-                                            <li><NavLink className="dropdown-item" to={'/services/sustainable-health'}>Sustainable Health</NavLink></li>
+                                            <li><NavLink className="dropdown-item" to={'/services/other-initiatives'}>Other Initiatives</NavLink></li>
 
 
                                         </ul>

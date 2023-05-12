@@ -21,28 +21,52 @@ import Footer from "../Footer";
             <section className="container-fluid py-5 bg-white">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-lg-6 mb-4 mb-lg-0">
-                            <img src="../../assets/img/nutrition.jpeg" className="img-fluid" />
+                    <div className="col-lg-6 mb-4 mb-lg-0">
+                            <p>
+                            <span className='fw-bold'>Issue:</span>
+                            <ul className='arrow'>
+                                <li>In the interior preschool education was inaccessible to the children in the tribal
+habitation.</li>
+                                <li>Sending children directly to mainstream schools also was challenging.</li>
+                            </ul>
+
+                            </p>
                         </div>
+                        <div className="col-lg-6 mb-4 mb-lg-0">
+                            <img src="../../assets/img/education/1.png" className="img-thumbnail rounded nutri-img w-100"  />
+                        </div>
+                    </div>
+                    <div className="row align-items-center">
+                    <div className="col-lg-6 mb-4 mb-lg-0">
+                            <img src="../../assets/img/education/2.png" className="img-thumbnail rounded nutri-img w-100"  />
+                        </div>
+                    <div className="col-lg-6 mb-4 mb-lg-0">
+                            <p>
+                            <span className='fw-bold'>Intervention:</span>
+                            <ul className='arrow'>
+                                <li>To fill this gap we have initiated BRIDGE SCHOOLS within the habitations itself,
+where they get basic education, mid-day meal & nutrition (Nutrition powder). After
+identifying potential students we motivate them to join into mainstream schools.
+</li>
+                            </ul>
+                            </p>
+                        </div>
+                      
+                    </div>
+                    <div className="row align-items-center">
+                    <div className="col-lg-6 mb-4 mb-lg-0">
+                            <p>
+                            <span className='fw-bold'>Impact:</span>
+                            <ul className='arrow'>
+                                <li>430+ children now have access to basic education & midday meals in 13 habitations.</li>
+                                <li>200+ children joined to mainstream school.</li>
+                            </ul>
 
-                        <div className="col-lg-6">
-                            <div className="mb-3">
-                                <div className="mb-2">        
-                                    <h4 className="">Challenge</h4>
-                                    <ul className="arrow">
-                                        <li> In the interior habitations there are no anganwadi centres or schools which made education inaccessible to the tribal habitation children.    
-
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>  <h4 className="">Intervention</h4>
-                                    <h6></h6>
-                                    <ul className="arrow">
-                                        <li>To fill this gap we have initiated BRIDGE SCHOOLS within the habitations itself, where they get access to basic education, mid-day meal & nutrition (Nutrition powder). After identifying potential students we motivate them to join into mainstream schools. 
-                                        </li>
-                                      </ul>
-                                </div>
-                            </div>
+                            </p>
+                        </div>
+                        <div className="col-lg-6 mb-4 mb-lg-0">
+                            <img src="../../assets/img/education/3.png" className="img-thumbnail rounded nutri-img w-100"  />
+                            <span className="fw-bold">BRIDGE SCHOOLS</span>
                         </div>
                     </div>
                      </div>

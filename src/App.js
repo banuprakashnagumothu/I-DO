@@ -14,7 +14,7 @@ import {
 import Nutrition from './components/Services/Nutrition';
 import Education from './components/Services/Education';
 import Wash from './components/Services/Wash';
-import SustainableHealth from './components/Services/SustainableHealth';
+import OtherInitiatives from './components/Services/OtherInitiatives';
 import OurPartners from './components/OurPartners';
 import MotherChildHealthCare from './components/Services/MotherChildHealthCare';
 import HealthCare from './components/Services/HealthCare';
@@ -60,8 +60,8 @@ function App() {
      </Route>
 
 
-     <Route path='/services/sustainable-health' exact>
-     <SustainableHealth />
+     <Route path='/services/other-initiatives' exact>
+     <OtherInitiatives />
      </Route>
      <Route path='/our-partners' exact>
        <OurPartners />
