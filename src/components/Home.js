@@ -143,15 +143,15 @@ function Home() {
                 <div className="container">
                     <div className="row text-center">
                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
-                            <Ticker className="service-count" end={90} />
+                            <Ticker className="service-count" end={110} />
                             <div className="service-count-name">Habitations Reached</div>
                         </div>
                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
-                            <Ticker className="service-count" end={61} />
+                            <Ticker className="service-count" end={101} />
                             <div className="service-count-name">Community Health Workers Trained</div>
                         </div>
                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
-                            <Ticker className="service-count" end={45000} />
+                            <Ticker className="service-count" end={53000} />
                             <div className="service-count-name">Patients covered</div>
                         </div>
                         <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
@@ -177,7 +177,12 @@ function Home() {
                                 Mosquito Nets Distributed
                             </div>
                         </div>
-
+                        <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
+                            <Ticker className="service-count" end={72} />
+                            <div className="service-count-name">
+                                Surgeries Added
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -3,6 +3,7 @@ import Footer from "../Footer";
 import MobileMedicalUnit from './MobileMedicalUnit';
 import MotherChildHealthCare from './MotherChildHealthCare';
 import RegalleVillageClinic from './RegallaVillageClinic';
+import Ticker from "../../ticker";
 function HealthCare() {
     const [menu, setMenu] = useState([{ 'menuItem': "sdsdsd" }, { 'menuItem': "2  item" }]);
     const [activatedTab, setActivatedTab] = useState('mobileMedicalUnit');
@@ -24,32 +25,49 @@ function HealthCare() {
                     </h1>
                 </div>
             </section>
+
             <main>
+            <section className="sectionservices-count-list">
+                <div className="container">
+                    <div className="row text-center">
+                
+                        <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
+                            <Ticker className="service-count" end={101} />
+                            <div className="service-count-name">Community Health Workers Trained</div>
+                        </div>
+                        <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
+                            <Ticker className="service-count" end={53000} />
+                            <div className="service-count-name">Patients covered</div>
+                        </div>
+                        <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
+                            <Ticker className="service-count" end={2015} />
+                            <div className="service-count-name">
+                            Antenatal Checkups for Pregnant
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
+                            <Ticker className="service-count" end={1949} />
+                            <div className="service-count-name">
+                            Newborn Care </div>
+                        </div>
+                        <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
+                            <Ticker className="service-count" end={143} />
+                            <div className="service-count-name">
+                            Critical Patients Admissions 
+                            </div>
+                        </div>
+                        <div className="col-12 col-md-4 d-flex flex-column service-count-wrapper">
+                            <Ticker className="service-count" end={72} />
+                            <div className="service-count-name">
+                            Surgical cases referrals & Admitted
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
                 <section className="container-fluid py-5 bg-white">
                     <div className='container'>
-                        <div className='col-12'>
-                            <p className='fw-bold'>Tribal communities and health situation:</p>
-                            <ul className='arrow'>
-                                <li>8.6% of the total population are Scheduled Tribal(ST) communities</li>
-                                <li>40.6% of ST population below the poverty line as against 20.5% of the non- tribal population </li>
-                                <li>IMR of ST population was 44.4 </li>
-                                <li>65% of tribal women in the age of 15-49 years group are anemic </li>
-                                <li>50% of the total deaths from Malaria are from Tribal communities  </li>
-                                <li>Tuberculosis prevalence in Tribal communities is 703 against 246(general population)  per 100,000 </li>
-                                <li>The rate of institutional delivery among the tribal women is the lowest( 70.1%)</li>
-                            </ul>
-                        </div>
-                        <div className='col-12'>
-                            <ul>
-                                <li>
-                                    TOTAL PATIENTS TREATED = 45000
-                                </li>
-                                <li>ANTENATAL CHECKUPS FOR PREGNANT = 1556</li>
-                                <li>NEWBORN CARE = 1944</li>
-                                <li>CRITICAL PATIENTS ADMISSIONS = 143</li>
-                                <li>SURGICAL CASES REFERRALS & ADMITTED = 67</li>
-                            </ul>
-                        </div>
                         <div className='col-12 mt-3 mb-3'>
                             <span className='fw-bold'>Challenges in providing healthcare to Indigenous communities</span>
                             <ol>
@@ -67,7 +85,7 @@ function HealthCare() {
                     <div className="container">
                         <ul class="nav nav-tabs healthcare-tabs mb-4" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation" onClick={e => activeTab('mobileMedicalUnit')}>
-                                <button className={(activatedTab === 'mobileMedicalUnit' ? 'active' : '') + " nav-link"} id="mobileMedicalUnit-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Interventions by I-DO</button>
+                                <button className={(activatedTab === 'mobileMedicalUnit' ? 'active' : '') + " nav-link"} id="mobileMedicalUnit-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Regalla Village Clinic</button>
                             </li>
                             <li class="nav-item" role="presentation" onClick={e => activeTab('motherChildHealthCare')}>
                                 <button className={(activatedTab === 'motherChildHealthCare' ? 'active' : '') + " nav-link"} id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Decentalised Healthcare units for Mother and Child care</button>
